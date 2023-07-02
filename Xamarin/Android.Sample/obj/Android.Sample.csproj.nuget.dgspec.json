@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/burakkebapci/Downloads/NeuroID_Xamarin_Binding_Library_Android-main/Xamarin/Android.Sample/Android.Sample.csproj": {}
+    "/Users/burakkebapci/Desktop/NeuroID_Xamarin_Binding_Library_Android/Xamarin/Android.Sample/Android.Sample.csproj": {}
   },
   "projects": {
-    "/Users/burakkebapci/Downloads/NeuroID_Xamarin_Binding_Library_Android-main/Xamarin/Android.Binding/Android.Binding.csproj": {
+    "/Users/burakkebapci/Desktop/NeuroID_Xamarin_Binding_Library_Android/Xamarin/Android.Binding/Android.Binding.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/burakkebapci/Downloads/NeuroID_Xamarin_Binding_Library_Android-main/Xamarin/Android.Binding/Android.Binding.csproj",
+        "projectUniqueName": "/Users/burakkebapci/Desktop/NeuroID_Xamarin_Binding_Library_Android/Xamarin/Android.Binding/Android.Binding.csproj",
         "projectName": "testBubblePicker.Binding",
-        "projectPath": "/Users/burakkebapci/Downloads/NeuroID_Xamarin_Binding_Library_Android-main/Xamarin/Android.Binding/Android.Binding.csproj",
+        "projectPath": "/Users/burakkebapci/Desktop/NeuroID_Xamarin_Binding_Library_Android/Xamarin/Android.Binding/Android.Binding.csproj",
         "packagesPath": "/Users/burakkebapci/.nuget/packages/",
-        "outputPath": "/Users/burakkebapci/Downloads/NeuroID_Xamarin_Binding_Library_Android-main/Xamarin/Android.Binding/obj/",
+        "outputPath": "/Users/burakkebapci/Desktop/NeuroID_Xamarin_Binding_Library_Android/Xamarin/Android.Binding/obj/",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
@@ -63,14 +63,14 @@
         }
       }
     },
-    "/Users/burakkebapci/Downloads/NeuroID_Xamarin_Binding_Library_Android-main/Xamarin/Android.Sample/Android.Sample.csproj": {
+    "/Users/burakkebapci/Desktop/NeuroID_Xamarin_Binding_Library_Android/Xamarin/Android.Sample/Android.Sample.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/burakkebapci/Downloads/NeuroID_Xamarin_Binding_Library_Android-main/Xamarin/Android.Sample/Android.Sample.csproj",
+        "projectUniqueName": "/Users/burakkebapci/Desktop/NeuroID_Xamarin_Binding_Library_Android/Xamarin/Android.Sample/Android.Sample.csproj",
         "projectName": "NeuroIDXamarinAndroid",
-        "projectPath": "/Users/burakkebapci/Downloads/NeuroID_Xamarin_Binding_Library_Android-main/Xamarin/Android.Sample/Android.Sample.csproj",
+        "projectPath": "/Users/burakkebapci/Desktop/NeuroID_Xamarin_Binding_Library_Android/Xamarin/Android.Sample/Android.Sample.csproj",
         "packagesPath": "/Users/burakkebapci/.nuget/packages/",
-        "outputPath": "/Users/burakkebapci/Downloads/NeuroID_Xamarin_Binding_Library_Android-main/Xamarin/Android.Sample/obj/",
+        "outputPath": "/Users/burakkebapci/Desktop/NeuroID_Xamarin_Binding_Library_Android/Xamarin/Android.Sample/obj/",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
@@ -85,8 +85,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "/Users/burakkebapci/Downloads/NeuroID_Xamarin_Binding_Library_Android-main/Xamarin/Android.Binding/Android.Binding.csproj": {
-                "projectPath": "/Users/burakkebapci/Downloads/NeuroID_Xamarin_Binding_Library_Android-main/Xamarin/Android.Binding/Android.Binding.csproj"
+              "/Users/burakkebapci/Desktop/NeuroID_Xamarin_Binding_Library_Android/Xamarin/Android.Binding/Android.Binding.csproj": {
+                "projectPath": "/Users/burakkebapci/Desktop/NeuroID_Xamarin_Binding_Library_Android/Xamarin/Android.Binding/Android.Binding.csproj"
               }
             }
           }

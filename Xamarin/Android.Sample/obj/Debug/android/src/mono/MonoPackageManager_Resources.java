@@ -1,8 +1,8 @@
 package mono;
 public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
-		/* We need to ensure that "AndroidSample.dll" comes first in this list. */
-		"AndroidSample.dll",
+		/* We need to ensure that "NeuroIDXamarinAndroid.dll" comes first in this list. */
+		"NeuroIDXamarinAndroid.dll",
 		"Android.Binding.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Core.Runtime.dll",

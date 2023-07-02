@@ -696,7 +696,7 @@
       <method abstract="false" deprecated="not deprecated" final="true" name="isStopped" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="true" synthetic="false" visibility="public" />
       <method abstract="false" deprecated="not deprecated" final="true" name="restart" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="true" synthetic="false" visibility="public" />
       <method abstract="false" deprecated="not deprecated" final="true" name="sendEventsNow" jni-signature="(ZLkotlin/coroutines/Continuation;)Ljava/lang/Object;" bridge="false" native="false" return="java.lang.Object" jni-return="Ljava/lang/Object;" static="false" synchronized="false" synthetic="false" visibility="public">
-        <parameter name="forceSendEvents" type="boolean" jni-type="Z" />
+        <parameter name="p0" type="boolean" jni-type="Z" />
         <parameter name="p1" type="kotlin.coroutines.Continuation&lt;? super kotlin.Unit&gt;" jni-type="Lkotlin/coroutines/Continuation&lt;-Lkotlin/Unit;&gt;;" not-null="true" />
       </method>
       <method abstract="false" deprecated="not deprecated" final="true" name="setSendEventsNowEnabled" jni-signature="(Z)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
@@ -728,10 +728,10 @@
       <method abstract="false" deprecated="not deprecated" final="true" name="getScreenName" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="true" synthetic="false" visibility="public" return-not-null="true" />
       <method abstract="false" deprecated="not deprecated" final="true" name="getSiteId" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
       <method abstract="false" deprecated="not deprecated" final="true" name="sendEventToServer" jni-signature="(Ljava/lang/String;Ljava/lang/String;Landroid/app/Application;Ljava/util/Set;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;" bridge="false" native="false" return="java.lang.Object" jni-return="Ljava/lang/Object;" static="false" synchronized="false" synthetic="false" visibility="public">
-        <parameter name="key" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
-        <parameter name="endpoint" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
-        <parameter name="context" type="android.app.Application" jni-type="Landroid/app/Application;" not-null="true" />
-        <parameter name="events" type="java.util.Set&lt;java.lang.String&gt;" jni-type="Ljava/util/Set&lt;Ljava/lang/String;&gt;;" />
+        <parameter name="p0" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="p1" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="p2" type="android.app.Application" jni-type="Landroid/app/Application;" not-null="true" />
+        <parameter name="p3" type="java.util.Set&lt;java.lang.String&gt;" jni-type="Ljava/util/Set&lt;Ljava/lang/String;&gt;;" />
         <parameter name="p4" type="kotlin.coroutines.Continuation&lt;? super kotlin.Pair&lt;java.lang.Integer, java.lang.Boolean&gt;&gt;" jni-type="Lkotlin/coroutines/Continuation&lt;-Lkotlin/Pair&lt;Ljava/lang/Integer;Ljava/lang/Boolean;&gt;;&gt;;" not-null="true" />
       </method>
       <method abstract="false" deprecated="not deprecated" final="true" name="setEnvironment" jni-signature="(Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">

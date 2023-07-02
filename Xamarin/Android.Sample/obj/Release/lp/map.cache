@@ -1,4 +1,4 @@
-testBubblePicker.Binding.dll
+Android.Binding.dll
 Xamarin.AndroidX.Activity.dll
 Xamarin.AndroidX.Annotation.dll
 Xamarin.AndroidX.Annotation.Experimental.dll
@@ -82,3 +82,4 @@ androidx.core.core-ktx.aar
 androidx.browser.browser.aar
 androidx.appcompat.appcompat-resources.aar
 androidx.appcompat.appcompat.aar
+testBubblePicker.Binding.dll

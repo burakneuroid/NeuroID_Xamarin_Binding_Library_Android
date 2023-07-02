@@ -7286,7 +7286,7 @@
         synthetic="false"
         jni-signature="(ZLkotlin/coroutines/Continuation;)Ljava/lang/Object;">
         <parameter
-          name="forceSendEvents"
+          name="p0"
           type="boolean"
           jni-type="Z" />
         <parameter
@@ -7763,22 +7763,22 @@
         synthetic="false"
         jni-signature="(Ljava/lang/String;Ljava/lang/String;Landroid/app/Application;Ljava/util/Set;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;">
         <parameter
-          name="key"
+          name="p0"
           type="java.lang.String"
           jni-type="Ljava/lang/String;"
           not-null="true" />
         <parameter
-          name="endpoint"
+          name="p1"
           type="java.lang.String"
           jni-type="Ljava/lang/String;"
           not-null="true" />
         <parameter
-          name="context"
+          name="p2"
           type="android.app.Application"
           jni-type="Landroid/app/Application;"
           not-null="true" />
         <parameter
-          name="events"
+          name="p3"
           type="java.util.Set&lt;java.lang.String&gt;"
           jni-type="Ljava/util/Set&lt;Ljava/lang/String;&gt;;" />
         <parameter

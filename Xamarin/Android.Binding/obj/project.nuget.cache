@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oJD8PPT1BMgrDDwNeDzlX3091+XHl4wOsVQgzdC+V5a17V7lAKFl7Mvje+28pB8MKLIAe5MfybK3/yrujCwXvQ==",
+  "dgSpecHash": "B3C9bwdB0qOGqZ96Q37RVfUZseF5BPcNl6gUx5Es6Kx1ZsKw+aqeM+Pt6W86AzAm5cNPFXzeClzy0WictKMpoQ==",
   "success": true,
-  "projectFilePath": "/Users/burakkebapci/Desktop/AndroidBinding/Xamarin/Android.Binding/Android.Binding.csproj",
+  "projectFilePath": "/Users/burakkebapci/Desktop/NeuroID_Xamarin_Binding_Library_Android/Xamarin/Android.Binding/Android.Binding.csproj",
   "expectedPackageFiles": [
     "/Users/burakkebapci/.nuget/packages/xamarin.androidx.annotation/1.2.0/xamarin.androidx.annotation.1.2.0.nupkg.sha512",
     "/Users/burakkebapci/.nuget/packages/xamarin.androidx.arch.core.common/2.1.0.8/xamarin.androidx.arch.core.common.2.1.0.8.nupkg.sha512",
