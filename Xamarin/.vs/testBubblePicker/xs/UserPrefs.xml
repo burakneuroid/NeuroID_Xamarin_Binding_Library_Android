@@ -1,0 +1,57 @@
+﻿<Properties StartupConfiguration="{A6AABD93-53F1-4750-9F41-59833E9723F6}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <Breakpoint file="/Users/burakkebapci/Desktop/AndroidBinding/Xamarin/testBubblePicker/MultiDexApplication.cs" relfile="testBubblePicker/MultiDexApplication.cs" line="20" column="1" />
+    <Breakpoint file="/Users/burakkebapci/Desktop/AndroidBinding/Xamarin/testBubblePicker/MultiDexApplication.cs" relfile="testBubblePicker/MultiDexApplication.cs" line="7" column="1" />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.Pixel_3a_API_32_arm64-v8a" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="13.2.0.6" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="testBubblePicker/Resources/values/styles.xml">
+    <Files>
+      <File FileName="testBubblePicker.Binding/Transforms/EnumMethods.xml" Line="14" Column="24" IsPinned="True" />
+      <File FileName="testBubblePicker/MainActivity.cs" Line="6" Column="1" />
+      <File FileName="testBubblePicker.Binding/Transforms/Metadata.xml" Line="4" Column="1" />
+      <File FileName="../../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Bindings.Core.targets" />
+      <File FileName="../../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Aapt2.targets" Line="156" Column="3" />
+      <File FileName="testBubblePicker/MultiDexApplication.cs" />
+      <File FileName="testBubblePicker/Properties/AndroidManifest.xml" />
+      <File FileName="testBubblePicker/Properties/AssemblyInfo.cs" />
+      <File FileName="../../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Legacy.targets" />
+      <File FileName="../../../.nuget/packages/xamarin.essentials/1.7.6/readme.txt" />
+      <File FileName="../../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" />
+      <File FileName="testBubblePicker/Resources/values/styles.xml" Line="4" Column="1" />
+      <File FileName="../../../.nuget/packages/xamarin.essentials/1.5.0/readme.txt" />
+      <File FileName="testBubblePicker/Resources/layout/content_main.xml" Line="1" Column="1" />
+      <File FileName="testBubblePicker.Binding/Transforms/EnumFields.xml" Line="1" Column="1" />
+      <File FileName="testBubblePicker.Binding/Additions/AboutAdditions.txt" Line="1" Column="1" />
+      <File FileName="testBubblePicker.Binding/Properties/AssemblyInfo.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="testBubblePicker" expanded="True">
+            <Node name="testBubblePicker" expanded="True">
+              <Node name="References" expanded="True" />
+              <Node name="Packages" expanded="True" selected="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Resources" expanded="True">
+                <Node name="layout" expanded="True" />
+                <Node name="values" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="testBubblePicker.Binding" expanded="True">
+              <Node name="References" expanded="True" />
+              <Node name="Additions" expanded="True" />
+              <Node name="Jars" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Transforms" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Android.Sample AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Pixel_3a_API_32_arm64-v8a" AndroidDesignerPreferredTheme="AppTheme" />
+  <MultiItemStartupConfigurations />
+</Properties>

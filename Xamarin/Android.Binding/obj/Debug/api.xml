@@ -1,0 +1,963 @@
+<api api-source="JavaTypeSystem">
+  <package name="com.neuroid.tracker" jni-name="com/neuroid/tracker">
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="BuildConfig" static="false" visibility="public" jni-signature="Lcom/neuroid/tracker/BuildConfig;">
+      <constructor deprecated="not deprecated" final="false" name="BuildConfig" jni-signature="()V" bridge="false" static="false" type="com.neuroid.tracker.BuildConfig" synthetic="false" visibility="public" />
+      <field deprecated="not deprecated" final="true" name="BUILD_TYPE" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;debug&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="DEBUG" jni-signature="Z" static="true" transient="false" type="boolean" type-generic-aware="boolean" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="FLAVOR" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;androidLib&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="GIT_HASH" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;4d52453&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="LIBRARY_PACKAGE_NAME" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;com.neuroid.tracker&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="VERSION_NAME" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;2.6.4&quot;" visibility="public" volatile="false" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="NeuroID" static="false" visibility="public" jni-signature="Lcom/neuroid/tracker/NeuroID;">
+      <constructor deprecated="not deprecated" final="false" name="NeuroID" jni-signature="(Landroid/app/Application;Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V" bridge="false" static="false" type="com.neuroid.tracker.NeuroID" synthetic="true" visibility="public">
+        <parameter name="application" type="android.app.Application" jni-type="Landroid/app/Application;" />
+        <parameter name="clientKey" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="$constructor_marker" type="kotlin.jvm.internal.DefaultConstructorMarker" jni-type="Lkotlin/jvm/internal/DefaultConstructorMarker;" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="true" name="captureEvent" jni-signature="(Ljava/lang/String;Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="eventName" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="tgs" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="closeSession" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="configureWithOptions" jni-signature="(Ljava/lang/String;Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="clientKey" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="endpoint" type="java.lang.String" jni-type="Ljava/lang/String;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="excludeViewByResourceID" jni-signature="(Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="id" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="formSubmit" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="formSubmitFailure" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="formSubmitSuccess" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getClientId" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="kotlin-internal" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getEnvironment" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getFirstTS" jni-signature="()J" bridge="false" native="false" return="long" jni-return="J" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getForceStart" jni-signature="()Ljava/lang/Boolean;" bridge="false" native="false" return="java.lang.Boolean" jni-return="Ljava/lang/Boolean;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getJsonPayLoad" jni-signature="(Landroid/content/Context;)Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="getSessionId" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="kotlin-internal" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getSiteId" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getTabId" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getUserId" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="kotlin-internal" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="isStopped" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="registerTarget" jni-signature="(Landroid/app/Activity;Landroid/view/View;Z)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="activity" type="android.app.Activity" jni-type="Landroid/app/Activity;" not-null="true" />
+        <parameter name="view" type="android.view.View" jni-type="Landroid/view/View;" not-null="true" />
+        <parameter name="addListener" type="boolean" jni-type="Z" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="resetClientId" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="resetJsonPayLoad" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="setEnvironment" jni-signature="(Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="environment" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="setForceStart" jni-signature="(Landroid/app/Activity;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="activity" type="android.app.Activity" jni-type="Landroid/app/Activity;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="setNeuroIdInstance" jni-signature="(Lcom/neuroid/tracker/NeuroID;)V" bridge="false" native="false" return="void" jni-return="V" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="neuroId" type="com.neuroid.tracker.NeuroID" jni-type="Lcom/neuroid/tracker/NeuroID;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="setScreenName" jni-signature="(Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="screen" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="setSiteId" jni-signature="(Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="siteId" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="setUserID" jni-signature="(Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="kotlin-internal">
+        <parameter name="userId" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="start" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="stop" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <field deprecated="not deprecated" final="true" name="Companion" jni-signature="Lcom/neuroid/tracker/NeuroID$Companion;" not-null="true" static="true" transient="false" type="com.neuroid.tracker.NeuroID.Companion" type-generic-aware="com.neuroid.tracker.NeuroID.Companion" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="ENDPOINT_PRODUCTION" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;https://receiver.neuroid.cloud/c&quot;" visibility="public" volatile="false" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="NeuroID.Builder" static="true" visibility="public" jni-signature="Lcom/neuroid/tracker/NeuroID$Builder;">
+      <constructor deprecated="not deprecated" final="false" name="NeuroID.Builder" jni-signature="()V" bridge="false" static="false" type="com.neuroid.tracker.NeuroID.Builder" synthetic="false" visibility="public" />
+      <constructor deprecated="not deprecated" final="false" name="NeuroID.Builder" jni-signature="(Landroid/app/Application;Ljava/lang/String;)V" bridge="false" static="false" type="com.neuroid.tracker.NeuroID.Builder" synthetic="false" visibility="public">
+        <parameter name="application" type="android.app.Application" jni-type="Landroid/app/Application;" />
+        <parameter name="clientKey" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="true" name="build" jni-signature="()Lcom/neuroid/tracker/NeuroID;" bridge="false" native="false" return="com.neuroid.tracker.NeuroID" jni-return="Lcom/neuroid/tracker/NeuroID;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component1" jni-signature="()Landroid/app/Application;" bridge="false" native="false" return="android.app.Application" jni-return="Landroid/app/Application;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component2" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="copy" jni-signature="(Landroid/app/Application;Ljava/lang/String;)Lcom/neuroid/tracker/NeuroID$Builder;" bridge="false" native="false" return="com.neuroid.tracker.NeuroID.Builder" jni-return="Lcom/neuroid/tracker/NeuroID$Builder;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true">
+        <parameter name="application" type="android.app.Application" jni-type="Landroid/app/Application;" />
+        <parameter name="clientKey" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="getApplication" jni-signature="()Landroid/app/Application;" bridge="false" native="false" return="android.app.Application" jni-return="Landroid/app/Application;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getClientKey" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="setApplication" jni-signature="(Landroid/app/Application;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="value" type="android.app.Application" jni-type="Landroid/app/Application;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="setClientKey" jni-signature="(Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="value" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="NeuroID.Companion" static="true" visibility="public" jni-signature="Lcom/neuroid/tracker/NeuroID$Companion;">
+      <constructor deprecated="not deprecated" final="false" name="NeuroID.Companion" jni-signature="(Lkotlin/jvm/internal/DefaultConstructorMarker;)V" bridge="false" static="false" type="com.neuroid.tracker.NeuroID.Companion" synthetic="true" visibility="public">
+        <parameter name="$constructor_marker" type="kotlin.jvm.internal.DefaultConstructorMarker" jni-type="Lkotlin/jvm/internal/DefaultConstructorMarker;" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="true" name="getInstance" jni-signature="()Lcom/neuroid/tracker/NeuroID;" bridge="false" native="false" return="com.neuroid.tracker.NeuroID" jni-return="Lcom/neuroid/tracker/NeuroID;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="setNeuroIdInstance" jni-signature="(Lcom/neuroid/tracker/NeuroID;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="neuroId" type="com.neuroid.tracker.NeuroID" jni-type="Lcom/neuroid/tracker/NeuroID;" not-null="true" />
+      </method>
+    </class>
+  </package>
+  <package name="com.neuroid.tracker.callbacks" jni-name="com/neuroid/tracker/callbacks">
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="AxisData" static="false" visibility="public" jni-signature="Lcom/neuroid/tracker/callbacks/AxisData;">
+      <constructor deprecated="not deprecated" final="false" name="AxisData" jni-signature="(IFFF)V" bridge="false" static="false" type="com.neuroid.tracker.callbacks.AxisData" synthetic="false" visibility="public">
+        <parameter name="type" type="int" jni-type="I" />
+        <parameter name="axisX" type="float" jni-type="F" />
+        <parameter name="axisY" type="float" jni-type="F" />
+        <parameter name="axisZ" type="float" jni-type="F" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="true" name="getAxisX" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getAxisY" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getAxisZ" jni-signature="()F" bridge="false" native="false" return="float" jni-return="F" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getType" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="NIDActivityCallbacks" static="false" visibility="public" jni-signature="Lcom/neuroid/tracker/callbacks/NIDActivityCallbacks;">
+      <implements name="android.app.Application.ActivityLifecycleCallbacks" name-generic-aware="android.app.Application.ActivityLifecycleCallbacks" jni-type="Landroid/app/Application$ActivityLifecycleCallbacks;" />
+      <constructor deprecated="not deprecated" final="false" name="NIDActivityCallbacks" jni-signature="()V" bridge="false" static="false" type="com.neuroid.tracker.callbacks.NIDActivityCallbacks" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="forceStart" jni-signature="(Landroid/app/Activity;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="activity" type="android.app.Activity" jni-type="Landroid/app/Activity;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onActivityCreated" jni-signature="(Landroid/app/Activity;Landroid/os/Bundle;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="activity" type="android.app.Activity" jni-type="Landroid/app/Activity;" not-null="true" />
+        <parameter name="bundle" type="android.os.Bundle" jni-type="Landroid/os/Bundle;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onActivityDestroyed" jni-signature="(Landroid/app/Activity;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="activity" type="android.app.Activity" jni-type="Landroid/app/Activity;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onActivityPaused" jni-signature="(Landroid/app/Activity;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="activity" type="android.app.Activity" jni-type="Landroid/app/Activity;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onActivityResumed" jni-signature="(Landroid/app/Activity;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="activity" type="android.app.Activity" jni-type="Landroid/app/Activity;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onActivitySaveInstanceState" jni-signature="(Landroid/app/Activity;Landroid/os/Bundle;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="activity" type="android.app.Activity" jni-type="Landroid/app/Activity;" not-null="true" />
+        <parameter name="bundle" type="android.os.Bundle" jni-type="Landroid/os/Bundle;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onActivityStarted" jni-signature="(Landroid/app/Activity;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="activity" type="android.app.Activity" jni-type="Landroid/app/Activity;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onActivityStopped" jni-signature="(Landroid/app/Activity;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="activity" type="android.app.Activity" jni-type="Landroid/app/Activity;" not-null="true" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="NIDContextMenuCallbacks" static="false" visibility="public" jni-signature="Lcom/neuroid/tracker/callbacks/NIDContextMenuCallbacks;">
+      <implements name="android.view.ActionMode.Callback" name-generic-aware="android.view.ActionMode.Callback" jni-type="Landroid/view/ActionMode$Callback;" />
+      <constructor deprecated="not deprecated" final="false" name="NIDContextMenuCallbacks" jni-signature="(Landroid/view/ActionMode$Callback;)V" bridge="false" static="false" type="com.neuroid.tracker.callbacks.NIDContextMenuCallbacks" synthetic="false" visibility="public">
+        <parameter name="actionCallBack" type="android.view.ActionMode.Callback" jni-type="Landroid/view/ActionMode$Callback;" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onActionItemClicked" jni-signature="(Landroid/view/ActionMode;Landroid/view/MenuItem;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="action" type="android.view.ActionMode" jni-type="Landroid/view/ActionMode;" />
+        <parameter name="item" type="android.view.MenuItem" jni-type="Landroid/view/MenuItem;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onCreateActionMode" jni-signature="(Landroid/view/ActionMode;Landroid/view/Menu;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="action" type="android.view.ActionMode" jni-type="Landroid/view/ActionMode;" />
+        <parameter name="menu" type="android.view.Menu" jni-type="Landroid/view/Menu;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onDestroyActionMode" jni-signature="(Landroid/view/ActionMode;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="actionMode" type="android.view.ActionMode" jni-type="Landroid/view/ActionMode;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onPrepareActionMode" jni-signature="(Landroid/view/ActionMode;Landroid/view/Menu;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="action" type="android.view.ActionMode" jni-type="Landroid/view/ActionMode;" />
+        <parameter name="menu" type="android.view.Menu" jni-type="Landroid/view/Menu;" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="NIDGlobalEventCallback" static="false" visibility="public" jni-signature="Lcom/neuroid/tracker/callbacks/NIDGlobalEventCallback;">
+      <implements name="android.view.ViewTreeObserver.OnGlobalFocusChangeListener" name-generic-aware="android.view.ViewTreeObserver.OnGlobalFocusChangeListener" jni-type="Landroid/view/ViewTreeObserver$OnGlobalFocusChangeListener;" />
+      <implements name="android.view.ViewTreeObserver.OnGlobalLayoutListener" name-generic-aware="android.view.ViewTreeObserver.OnGlobalLayoutListener" jni-type="Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;" />
+      <implements name="android.view.Window.Callback" name-generic-aware="android.view.Window.Callback" jni-type="Landroid/view/Window$Callback;" />
+      <constructor deprecated="not deprecated" final="false" name="NIDGlobalEventCallback" jni-signature="(Landroid/view/Window$Callback;Lcom/neuroid/tracker/events/NIDTouchEventManager;Landroid/view/View;)V" bridge="false" static="false" type="com.neuroid.tracker.callbacks.NIDGlobalEventCallback" synthetic="false" visibility="public">
+        <parameter name="windowCallback" type="android.view.Window.Callback" jni-type="Landroid/view/Window$Callback;" not-null="true" />
+        <parameter name="eventManager" type="com.neuroid.tracker.events.NIDTouchEventManager" jni-type="Lcom/neuroid/tracker/events/NIDTouchEventManager;" not-null="true" />
+        <parameter name="viewMainContainer" type="android.view.View" jni-type="Landroid/view/View;" not-null="true" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="dispatchGenericMotionEvent" jni-signature="(Landroid/view/MotionEvent;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="motionEvent" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="dispatchKeyEvent" jni-signature="(Landroid/view/KeyEvent;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="keyEvent" type="android.view.KeyEvent" jni-type="Landroid/view/KeyEvent;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="dispatchKeyShortcutEvent" jni-signature="(Landroid/view/KeyEvent;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="keyEvent" type="android.view.KeyEvent" jni-type="Landroid/view/KeyEvent;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="dispatchPopulateAccessibilityEvent" jni-signature="(Landroid/view/accessibility/AccessibilityEvent;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="accessibilityEvent" type="android.view.accessibility.AccessibilityEvent" jni-type="Landroid/view/accessibility/AccessibilityEvent;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="dispatchTouchEvent" jni-signature="(Landroid/view/MotionEvent;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="motionEvent" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="dispatchTrackballEvent" jni-signature="(Landroid/view/MotionEvent;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="motionEvent" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onActionModeFinished" jni-signature="(Landroid/view/ActionMode;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="android.view.ActionMode" jni-type="Landroid/view/ActionMode;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onActionModeStarted" jni-signature="(Landroid/view/ActionMode;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="android.view.ActionMode" jni-type="Landroid/view/ActionMode;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onAttachedToWindow" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="onContentChanged" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="onCreatePanelMenu" jni-signature="(ILandroid/view/Menu;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="int" jni-type="I" />
+        <parameter name="menu" type="android.view.Menu" jni-type="Landroid/view/Menu;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onCreatePanelView" jni-signature="(I)Landroid/view/View;" bridge="false" native="false" return="android.view.View" jni-return="Landroid/view/View;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onDetachedFromWindow" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="onGlobalFocusChanged" jni-signature="(Landroid/view/View;Landroid/view/View;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="oldView" type="android.view.View" jni-type="Landroid/view/View;" />
+        <parameter name="newView" type="android.view.View" jni-type="Landroid/view/View;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onGlobalLayout" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="onMenuItemSelected" jni-signature="(ILandroid/view/MenuItem;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="int" jni-type="I" />
+        <parameter name="menuItem" type="android.view.MenuItem" jni-type="Landroid/view/MenuItem;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onMenuOpened" jni-signature="(ILandroid/view/Menu;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="int" jni-type="I" />
+        <parameter name="menu" type="android.view.Menu" jni-type="Landroid/view/Menu;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onPanelClosed" jni-signature="(ILandroid/view/Menu;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="int" jni-type="I" />
+        <parameter name="menu" type="android.view.Menu" jni-type="Landroid/view/Menu;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onPreparePanel" jni-signature="(ILandroid/view/View;Landroid/view/Menu;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="int" jni-type="I" />
+        <parameter name="view" type="android.view.View" jni-type="Landroid/view/View;" />
+        <parameter name="menu" type="android.view.Menu" jni-type="Landroid/view/Menu;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onSearchRequested" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="onSearchRequested" jni-signature="(Landroid/view/SearchEvent;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="searchEvent" type="android.view.SearchEvent" jni-type="Landroid/view/SearchEvent;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onWindowAttributesChanged" jni-signature="(Landroid/view/WindowManager$LayoutParams;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="layoutParams" type="android.view.WindowManager.LayoutParams" jni-type="Landroid/view/WindowManager$LayoutParams;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onWindowFocusChanged" jni-signature="(Z)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="boolean" jni-type="Z" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onWindowStartingActionMode" jni-signature="(Landroid/view/ActionMode$Callback;)Landroid/view/ActionMode;" bridge="false" native="false" return="android.view.ActionMode" jni-return="Landroid/view/ActionMode;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="actionMode" type="android.view.ActionMode.Callback" jni-type="Landroid/view/ActionMode$Callback;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onWindowStartingActionMode" jni-signature="(Landroid/view/ActionMode$Callback;I)Landroid/view/ActionMode;" bridge="false" native="false" return="android.view.ActionMode" jni-return="Landroid/view/ActionMode;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="android.view.ActionMode.Callback" jni-type="Landroid/view/ActionMode$Callback;" />
+        <parameter name="p1" type="int" jni-type="I" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="NIDSensorData" static="false" visibility="public" jni-signature="Lcom/neuroid/tracker/callbacks/NIDSensorData;">
+      <constructor deprecated="not deprecated" final="false" name="NIDSensorData" jni-signature="(Ljava/lang/String;Lcom/neuroid/tracker/callbacks/NIDSensorStatus;Ljava/lang/Float;Ljava/lang/Float;Ljava/lang/Float;)V" bridge="false" static="false" type="com.neuroid.tracker.callbacks.NIDSensorData" synthetic="false" visibility="public">
+        <parameter name="name" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="status" type="com.neuroid.tracker.callbacks.NIDSensorStatus" jni-type="Lcom/neuroid/tracker/callbacks/NIDSensorStatus;" not-null="true" />
+        <parameter name="axisX" type="java.lang.Float" jni-type="Ljava/lang/Float;" />
+        <parameter name="axisY" type="java.lang.Float" jni-type="Ljava/lang/Float;" />
+        <parameter name="axisZ" type="java.lang.Float" jni-type="Ljava/lang/Float;" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="true" name="component1" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component2" jni-signature="()Lcom/neuroid/tracker/callbacks/NIDSensorStatus;" bridge="false" native="false" return="com.neuroid.tracker.callbacks.NIDSensorStatus" jni-return="Lcom/neuroid/tracker/callbacks/NIDSensorStatus;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component3" jni-signature="()Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component4" jni-signature="()Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component5" jni-signature="()Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="copy" jni-signature="(Ljava/lang/String;Lcom/neuroid/tracker/callbacks/NIDSensorStatus;Ljava/lang/Float;Ljava/lang/Float;Ljava/lang/Float;)Lcom/neuroid/tracker/callbacks/NIDSensorData;" bridge="false" native="false" return="com.neuroid.tracker.callbacks.NIDSensorData" jni-return="Lcom/neuroid/tracker/callbacks/NIDSensorData;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true">
+        <parameter name="name" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="status" type="com.neuroid.tracker.callbacks.NIDSensorStatus" jni-type="Lcom/neuroid/tracker/callbacks/NIDSensorStatus;" not-null="true" />
+        <parameter name="axisX" type="java.lang.Float" jni-type="Ljava/lang/Float;" />
+        <parameter name="axisY" type="java.lang.Float" jni-type="Ljava/lang/Float;" />
+        <parameter name="axisZ" type="java.lang.Float" jni-type="Ljava/lang/Float;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="getAxisX" jni-signature="()Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getAxisY" jni-signature="()Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getAxisZ" jni-signature="()Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getName" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getStatus" jni-signature="()Lcom/neuroid/tracker/callbacks/NIDSensorStatus;" bridge="false" native="false" return="com.neuroid.tracker.callbacks.NIDSensorStatus" jni-return="Lcom/neuroid/tracker/callbacks/NIDSensorStatus;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="setAxisX" jni-signature="(Ljava/lang/Float;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="&lt;set-?&gt;" type="java.lang.Float" jni-type="Ljava/lang/Float;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="setAxisY" jni-signature="(Ljava/lang/Float;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="&lt;set-?&gt;" type="java.lang.Float" jni-type="Ljava/lang/Float;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="setAxisZ" jni-signature="(Ljava/lang/Float;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="&lt;set-?&gt;" type="java.lang.Float" jni-type="Ljava/lang/Float;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="setStatus" jni-signature="(Lcom/neuroid/tracker/callbacks/NIDSensorStatus;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="value" type="com.neuroid.tracker.callbacks.NIDSensorStatus" jni-type="Lcom/neuroid/tracker/callbacks/NIDSensorStatus;" not-null="true" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="NIDSensorGenListener" static="false" visibility="public" jni-signature="Lcom/neuroid/tracker/callbacks/NIDSensorGenListener;">
+      <implements name="android.hardware.SensorEventListener" name-generic-aware="android.hardware.SensorEventListener" jni-type="Landroid/hardware/SensorEventListener;" />
+      <constructor deprecated="not deprecated" final="false" name="NIDSensorGenListener" jni-signature="(Lkotlin/jvm/functions/Function1;)V" bridge="false" static="false" type="com.neuroid.tracker.callbacks.NIDSensorGenListener" synthetic="false" visibility="public">
+        <parameter name="callback" type="kotlin.jvm.functions.Function1&lt;? super com.neuroid.tracker.callbacks.AxisData, kotlin.Unit&gt;" jni-type="Lkotlin/jvm/functions/Function1&lt;-Lcom/neuroid/tracker/callbacks/AxisData;Lkotlin/Unit;&gt;;" not-null="true" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="true" name="getCallback" jni-signature="()Lkotlin/jvm/functions/Function1;" bridge="false" native="false" return="kotlin.jvm.functions.Function1&lt;com.neuroid.tracker.callbacks.AxisData, kotlin.Unit&gt;" jni-return="Lkotlin/jvm/functions/Function1&lt;Lcom/neuroid/tracker/callbacks/AxisData;Lkotlin/Unit;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="onAccuracyChanged" jni-signature="(Landroid/hardware/Sensor;I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="sensor" type="android.hardware.Sensor" jni-type="Landroid/hardware/Sensor;" />
+        <parameter name="accuracy" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onSensorChanged" jni-signature="(Landroid/hardware/SensorEvent;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="event" type="android.hardware.SensorEvent" jni-type="Landroid/hardware/SensorEvent;" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="NIDSensorHelper" static="false" visibility="public" jni-signature="Lcom/neuroid/tracker/callbacks/NIDSensorHelper;">
+      <method abstract="false" deprecated="not deprecated" final="true" name="getAccelerometerInfo" jni-signature="()Lcom/neuroid/tracker/models/NIDSensorModel;" bridge="false" native="false" return="com.neuroid.tracker.models.NIDSensorModel" jni-return="Lcom/neuroid/tracker/models/NIDSensorModel;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getGyroscopeInfo" jni-signature="()Lcom/neuroid/tracker/models/NIDSensorModel;" bridge="false" native="false" return="com.neuroid.tracker.models.NIDSensorModel" jni-return="Lcom/neuroid/tracker/models/NIDSensorModel;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getValuesAccel" jni-signature="()Lcom/neuroid/tracker/callbacks/NIDSensorData;" bridge="false" native="false" return="com.neuroid.tracker.callbacks.NIDSensorData" jni-return="Lcom/neuroid/tracker/callbacks/NIDSensorData;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getValuesGyro" jni-signature="()Lcom/neuroid/tracker/callbacks/NIDSensorData;" bridge="false" native="false" return="com.neuroid.tracker.callbacks.NIDSensorData" jni-return="Lcom/neuroid/tracker/callbacks/NIDSensorData;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="initSensorHelper" jni-signature="(Landroid/content/Context;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="restartSensors" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="stopSensors" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <field deprecated="not deprecated" final="true" name="INSTANCE" jni-signature="Lcom/neuroid/tracker/callbacks/NIDSensorHelper;" not-null="true" static="true" transient="false" type="com.neuroid.tracker.callbacks.NIDSensorHelper" type-generic-aware="com.neuroid.tracker.callbacks.NIDSensorHelper" visibility="public" volatile="false" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="NIDSensors" static="false" visibility="public" jni-signature="Lcom/neuroid/tracker/callbacks/NIDSensors;">
+      <constructor deprecated="not deprecated" final="false" name="NIDSensors" jni-signature="()V" bridge="false" static="false" type="com.neuroid.tracker.callbacks.NIDSensors" synthetic="false" visibility="public" />
+      <constructor deprecated="not deprecated" final="false" name="NIDSensors" jni-signature="(Lcom/neuroid/tracker/callbacks/NIDSensorData;Lcom/neuroid/tracker/callbacks/NIDSensorData;)V" bridge="false" static="false" type="com.neuroid.tracker.callbacks.NIDSensors" synthetic="false" visibility="public">
+        <parameter name="gyroscopeData" type="com.neuroid.tracker.callbacks.NIDSensorData" jni-type="Lcom/neuroid/tracker/callbacks/NIDSensorData;" not-null="true" />
+        <parameter name="accelerometer" type="com.neuroid.tracker.callbacks.NIDSensorData" jni-type="Lcom/neuroid/tracker/callbacks/NIDSensorData;" not-null="true" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="true" name="component1" jni-signature="()Lcom/neuroid/tracker/callbacks/NIDSensorData;" bridge="false" native="false" return="com.neuroid.tracker.callbacks.NIDSensorData" jni-return="Lcom/neuroid/tracker/callbacks/NIDSensorData;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component2" jni-signature="()Lcom/neuroid/tracker/callbacks/NIDSensorData;" bridge="false" native="false" return="com.neuroid.tracker.callbacks.NIDSensorData" jni-return="Lcom/neuroid/tracker/callbacks/NIDSensorData;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="copy" jni-signature="(Lcom/neuroid/tracker/callbacks/NIDSensorData;Lcom/neuroid/tracker/callbacks/NIDSensorData;)Lcom/neuroid/tracker/callbacks/NIDSensors;" bridge="false" native="false" return="com.neuroid.tracker.callbacks.NIDSensors" jni-return="Lcom/neuroid/tracker/callbacks/NIDSensors;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true">
+        <parameter name="gyroscopeData" type="com.neuroid.tracker.callbacks.NIDSensorData" jni-type="Lcom/neuroid/tracker/callbacks/NIDSensorData;" not-null="true" />
+        <parameter name="accelerometer" type="com.neuroid.tracker.callbacks.NIDSensorData" jni-type="Lcom/neuroid/tracker/callbacks/NIDSensorData;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="getAccelerometer" jni-signature="()Lcom/neuroid/tracker/callbacks/NIDSensorData;" bridge="false" native="false" return="com.neuroid.tracker.callbacks.NIDSensorData" jni-return="Lcom/neuroid/tracker/callbacks/NIDSensorData;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getGyroscopeData" jni-signature="()Lcom/neuroid/tracker/callbacks/NIDSensorData;" bridge="false" native="false" return="com.neuroid.tracker.callbacks.NIDSensorData" jni-return="Lcom/neuroid/tracker/callbacks/NIDSensorData;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="setAccelerometer" jni-signature="(Lcom/neuroid/tracker/callbacks/NIDSensorData;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="value" type="com.neuroid.tracker.callbacks.NIDSensorData" jni-type="Lcom/neuroid/tracker/callbacks/NIDSensorData;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="setGyroscopeData" jni-signature="(Lcom/neuroid/tracker/callbacks/NIDSensorData;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="value" type="com.neuroid.tracker.callbacks.NIDSensorData" jni-type="Lcom/neuroid/tracker/callbacks/NIDSensorData;" not-null="true" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.neuroid.tracker.callbacks.NIDSensorStatus&gt;" jni-extends="Ljava/lang/Enum;" final="true" name="NIDSensorStatus" static="false" visibility="public" jni-signature="Lcom/neuroid/tracker/callbacks/NIDSensorStatus;">
+      <method abstract="false" deprecated="not deprecated" final="false" name="valueOf" jni-signature="(Ljava/lang/String;)Lcom/neuroid/tracker/callbacks/NIDSensorStatus;" bridge="false" native="false" return="com.neuroid.tracker.callbacks.NIDSensorStatus" jni-return="Lcom/neuroid/tracker/callbacks/NIDSensorStatus;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="value" type="java.lang.String" jni-type="Ljava/lang/String;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="values" jni-signature="()[Lcom/neuroid/tracker/callbacks/NIDSensorStatus;" bridge="false" native="false" return="com.neuroid.tracker.callbacks.NIDSensorStatus[]" jni-return="[Lcom/neuroid/tracker/callbacks/NIDSensorStatus;" static="true" synchronized="false" synthetic="false" visibility="public" />
+      <field deprecated="not deprecated" final="true" name="AVAILABLE" jni-signature="Lcom/neuroid/tracker/callbacks/NIDSensorStatus;" static="true" transient="false" type="com.neuroid.tracker.callbacks.NIDSensorStatus" type-generic-aware="com.neuroid.tracker.callbacks.NIDSensorStatus" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="UNAVAILABLE" jni-signature="Lcom/neuroid/tracker/callbacks/NIDSensorStatus;" static="true" transient="false" type="com.neuroid.tracker.callbacks.NIDSensorStatus" type-generic-aware="com.neuroid.tracker.callbacks.NIDSensorStatus" visibility="public" volatile="false" />
+    </class>
+  </package>
+  <package name="com.neuroid.tracker.events" jni-name="com/neuroid/tracker/events">
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="NIDConstantsKt" static="false" visibility="public" jni-signature="Lcom/neuroid/tracker/events/NIDConstantsKt;">
+      <field deprecated="not deprecated" final="true" name="ANDROID_URI" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;android://&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="APPLICATION_SUBMIT" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;APPLICATION_SUBMIT&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="APPLICATION_SUBMIT_FAILURE" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;APPLICATION_SUBMIT_FAILURE&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="APPLICATION_SUBMIT_SUCCESS" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;APPLICATION_SUBMIT_SUCCESS&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="BLUR" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;BLUR&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CHANGE" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;CHANGE&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CHECKBOX_CHANGE" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;CHECKBOX_CHANGE&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CLOSE_SESSION" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;CLOSE_SESSION&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="COPY" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;COPY&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CREATE_SESSION" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;CREATE_SESSION&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CUT" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;CUT&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="DEVICE_MOTION" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;DEVICE_MOTION&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="ERROR" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;ERROR&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="FOCUS" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;FOCUS&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="FORM_RESET" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;FORM_RESET&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="FORM_SUBMIT" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;APPLICATION_SUBMIT&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="FORM_SUBMIT_FAILURE" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;APPLICATION_SUBMIT_FAILURE&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="FORM_SUBMIT_SUCCESS" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;APPLICATION_SUBMIT_SUCCESS&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="HEARTBEAT" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;HEARTBEAT&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="INPUT" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;INPUT&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="INPUT_CHANGE" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;INPUT_CHANGE&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="INVALID" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;INVALID&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="KEY_DOWN" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;KEY_DOWN&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="KEY_UP" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;KEY_UP&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="LOG" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;LOG&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="MUTATION_ATTR" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;MUTATION_ATTR&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="MUTATION_INSERT" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;MUTATION_INSERT&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="MUTATION_REMOVE" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;MUTATION_REMOVE&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="PAGE_SUBMIT" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;PAGE_SUBMIT&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="PASTE" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;PASTE&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="RADIO_CHANGE" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;RADIO_CHANGE&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="RATING_BAR_CHANGE" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;RATING_BAR_CHANGE&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="REGISTER_COMPONENT" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;REGISTER_COMPONENT&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="REGISTER_STYLESHEET" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;REGISTER_STYLESHEET&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="REGISTER_TARGET" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;REGISTER_TARGET&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="SELECT_CHANGE" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;SELECT_CHANGE&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="SET_USER_ID" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;SET_USER_ID&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="SLIDER_CHANGE" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;SLIDER_CHANGE&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="SLIDER_SET_MAX" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;SLIDER_SET_MAX&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="SLIDER_SET_MIN" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;SLIDER_SET_MIN&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="SWITCH_CHANGE" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;SWITCH_CHANGE&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="TEXT_CHANGE" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;TEXT_CHANGE&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="TOGGLE_BUTTON_CHANGE" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;TOGGLE_BUTTON_CHANGE&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="TOUCH_CANCEL" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;TOUCH_CANCEL&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="TOUCH_END" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;TOUCH_END&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="TOUCH_MOVE" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;TOUCH_MOVE&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="TOUCH_START" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;TOUCH_START&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="USER_INACTIVE" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;USER_INACTIVE&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="WINDOW_BLUR" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;WINDOW_BLUR&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="WINDOW_FOCUS" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;WINDOW_FOCUS&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="WINDOW_LOAD" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;WINDOW_LOAD&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="WINDOW_ORIENTATION_CHANGE" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;WINDOW_ORIENTATION_CHANGE&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="WINDOW_RESIZE" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;WINDOW_RESIZE&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="WINDOW_UNLOAD" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;WINDOW_UNLOAD&quot;" visibility="public" volatile="false" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="NIDIdentifyAllViewsKt" static="false" visibility="public" jni-signature="Lcom/neuroid/tracker/events/NIDIdentifyAllViewsKt;">
+      <method abstract="false" deprecated="not deprecated" final="true" name="identifyAllViews" jni-signature="(Landroid/view/ViewGroup;Ljava/lang/String;ZZ)V" bridge="false" native="false" return="void" jni-return="V" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="viewParent" type="android.view.ViewGroup" jni-type="Landroid/view/ViewGroup;" not-null="true" />
+        <parameter name="guid" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="registerTarget" type="boolean" jni-type="Z" />
+        <parameter name="registerListeners" type="boolean" jni-type="Z" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="identifyView" jni-signature="(Landroid/view/View;Ljava/lang/String;ZZ)V" bridge="false" native="false" return="void" jni-return="V" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="view" type="android.view.View" jni-type="Landroid/view/View;" not-null="true" />
+        <parameter name="guid" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="registerTarget" type="boolean" jni-type="Z" />
+        <parameter name="registerListeners" type="boolean" jni-type="Z" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="registerComponent" jni-signature="(Landroid/view/View;Ljava/lang/String;Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="view" type="android.view.View" jni-type="Landroid/view/View;" not-null="true" />
+        <parameter name="guid" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="rts" type="java.lang.String" jni-type="Ljava/lang/String;" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="NIDRegisterEventsHelperKt" static="false" visibility="public" jni-signature="Lcom/neuroid/tracker/events/NIDRegisterEventsHelperKt;">
+      <method abstract="false" deprecated="not deprecated" final="true" name="registerTargetFromScreen" jni-signature="(Landroid/app/Activity;ZZ)V" bridge="false" native="false" return="void" jni-return="V" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="activity" type="android.app.Activity" jni-type="Landroid/app/Activity;" not-null="true" />
+        <parameter name="registerTarget" type="boolean" jni-type="Z" />
+        <parameter name="registerListeners" type="boolean" jni-type="Z" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="registerWindowListeners" jni-signature="(Landroid/app/Activity;)V" bridge="false" native="false" return="void" jni-return="V" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="activity" type="android.app.Activity" jni-type="Landroid/app/Activity;" not-null="true" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="NIDTouchEventManager" static="false" visibility="public" jni-signature="Lcom/neuroid/tracker/events/NIDTouchEventManager;">
+      <constructor deprecated="not deprecated" final="false" name="NIDTouchEventManager" jni-signature="(Landroid/view/ViewGroup;)V" bridge="false" static="false" type="com.neuroid.tracker.events.NIDTouchEventManager" synthetic="false" visibility="public">
+        <parameter name="viewParent" type="android.view.ViewGroup" jni-type="Landroid/view/ViewGroup;" not-null="true" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="true" name="detectView" jni-signature="(Landroid/view/MotionEvent;J)Landroid/view/View;" bridge="false" native="false" return="android.view.View" jni-return="Landroid/view/View;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="motionEvent" type="android.view.MotionEvent" jni-type="Landroid/view/MotionEvent;" />
+        <parameter name="timeMills" type="long" jni-type="J" />
+      </method>
+    </class>
+  </package>
+  <package name="com.neuroid.tracker.extensions" jni-name="com/neuroid/tracker/extensions">
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="NIDTextExtensionsKt" static="false" visibility="public" jni-signature="Lcom/neuroid/tracker/extensions/NIDTextExtensionsKt;">
+      <method abstract="false" deprecated="not deprecated" final="true" name="getSHA256" jni-signature="(Ljava/lang/String;)Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="true" synchronized="false" synthetic="false" visibility="public" return-not-null="true">
+        <parameter name="obj" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="getSHA256withSalt" jni-signature="(Ljava/lang/String;)Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="true" synchronized="false" synthetic="false" visibility="public" return-not-null="true">
+        <parameter name="obj" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+      </method>
+    </class>
+  </package>
+  <package name="com.neuroid.tracker.models" jni-name="com/neuroid/tracker/models">
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="NIDEventModel" static="false" visibility="public" jni-signature="Lcom/neuroid/tracker/models/NIDEventModel;">
+      <implements name="java.lang.Comparable" name-generic-aware="java.lang.Comparable&lt;com.neuroid.tracker.models.NIDEventModel&gt;" jni-type="Ljava/lang/Comparable&lt;Lcom/neuroid/tracker/models/NIDEventModel;&gt;;" />
+      <constructor deprecated="not deprecated" final="false" name="NIDEventModel" jni-signature="(Ljava/lang/String;Lorg/json/JSONArray;Ljava/util/Map;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Lcom/neuroid/tracker/models/NIDSensorModel;Lcom/neuroid/tracker/models/NIDSensorModel;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLjava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Float;Ljava/lang/Float;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Float;Ljava/lang/Float;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/json/JSONObject;)V" bridge="false" static="false" type="com.neuroid.tracker.models.NIDEventModel" synthetic="false" visibility="public">
+        <parameter name="type" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="attrs" type="org.json.JSONArray" jni-type="Lorg/json/JSONArray;" />
+        <parameter name="tg" type="java.util.Map&lt;java.lang.String, ? extends java.lang.Object&gt;" jni-type="Ljava/util/Map&lt;Ljava/lang/String;+Ljava/lang/Object;&gt;;" />
+        <parameter name="tgs" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="touches" type="java.util.List&lt;java.lang.String&gt;" jni-type="Ljava/util/List&lt;Ljava/lang/String;&gt;;" />
+        <parameter name="key" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="gyro" type="com.neuroid.tracker.models.NIDSensorModel" jni-type="Lcom/neuroid/tracker/models/NIDSensorModel;" />
+        <parameter name="accel" type="com.neuroid.tracker.models.NIDSensorModel" jni-type="Lcom/neuroid/tracker/models/NIDSensorModel;" />
+        <parameter name="v" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="hv" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="en" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="etn" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="ec" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="et" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="eid" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="ct" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="ts" type="long" jni-type="J" />
+        <parameter name="sm" type="java.lang.Integer" jni-type="Ljava/lang/Integer;" />
+        <parameter name="pd" type="java.lang.Integer" jni-type="Ljava/lang/Integer;" />
+        <parameter name="x" type="java.lang.Float" jni-type="Ljava/lang/Float;" />
+        <parameter name="y" type="java.lang.Float" jni-type="Ljava/lang/Float;" />
+        <parameter name="w" type="java.lang.Integer" jni-type="Ljava/lang/Integer;" />
+        <parameter name="h" type="java.lang.Integer" jni-type="Ljava/lang/Integer;" />
+        <parameter name="sw" type="java.lang.Float" jni-type="Ljava/lang/Float;" />
+        <parameter name="sh" type="java.lang.Float" jni-type="Ljava/lang/Float;" />
+        <parameter name="f" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="lsid" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="sid" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="siteId" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="cid" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="did" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="iid" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="loc" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="ua" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="tzo" type="java.lang.Integer" jni-type="Ljava/lang/Integer;" />
+        <parameter name="lng" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="ce" type="java.lang.Boolean" jni-type="Ljava/lang/Boolean;" />
+        <parameter name="je" type="java.lang.Boolean" jni-type="Ljava/lang/Boolean;" />
+        <parameter name="ol" type="java.lang.Boolean" jni-type="Ljava/lang/Boolean;" />
+        <parameter name="p" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="dnt" type="java.lang.Boolean" jni-type="Ljava/lang/Boolean;" />
+        <parameter name="tch" type="java.lang.Boolean" jni-type="Ljava/lang/Boolean;" />
+        <parameter name="url" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="ns" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="jsl" type="java.util.List&lt;java.lang.String&gt;" jni-type="Ljava/util/List&lt;Ljava/lang/String;&gt;;" />
+        <parameter name="jsv" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="uid" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="o" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="rts" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="metadata" type="org.json.JSONObject" jni-type="Lorg/json/JSONObject;" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="compareTo" jni-signature="(Lcom/neuroid/tracker/models/NIDEventModel;)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="other" type="com.neuroid.tracker.models.NIDEventModel" jni-type="Lcom/neuroid/tracker/models/NIDEventModel;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="component1" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component10" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component11" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component12" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component13" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component14" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component15" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component16" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component17" jni-signature="()J" bridge="false" native="false" return="long" jni-return="J" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component18" jni-signature="()Ljava/lang/Integer;" bridge="false" native="false" return="java.lang.Integer" jni-return="Ljava/lang/Integer;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component19" jni-signature="()Ljava/lang/Integer;" bridge="false" native="false" return="java.lang.Integer" jni-return="Ljava/lang/Integer;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component2" jni-signature="()Lorg/json/JSONArray;" bridge="false" native="false" return="org.json.JSONArray" jni-return="Lorg/json/JSONArray;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component20" jni-signature="()Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component21" jni-signature="()Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component22" jni-signature="()Ljava/lang/Integer;" bridge="false" native="false" return="java.lang.Integer" jni-return="Ljava/lang/Integer;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component23" jni-signature="()Ljava/lang/Integer;" bridge="false" native="false" return="java.lang.Integer" jni-return="Ljava/lang/Integer;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component24" jni-signature="()Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component25" jni-signature="()Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component26" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component27" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component28" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component29" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component3" jni-signature="()Ljava/util/Map;" bridge="false" native="false" return="java.util.Map&lt;java.lang.String, java.lang.Object&gt;" jni-return="Ljava/util/Map&lt;Ljava/lang/String;Ljava/lang/Object;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component30" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component31" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component32" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component33" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component34" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component35" jni-signature="()Ljava/lang/Integer;" bridge="false" native="false" return="java.lang.Integer" jni-return="Ljava/lang/Integer;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component36" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component37" jni-signature="()Ljava/lang/Boolean;" bridge="false" native="false" return="java.lang.Boolean" jni-return="Ljava/lang/Boolean;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component38" jni-signature="()Ljava/lang/Boolean;" bridge="false" native="false" return="java.lang.Boolean" jni-return="Ljava/lang/Boolean;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component39" jni-signature="()Ljava/lang/Boolean;" bridge="false" native="false" return="java.lang.Boolean" jni-return="Ljava/lang/Boolean;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component4" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component40" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component41" jni-signature="()Ljava/lang/Boolean;" bridge="false" native="false" return="java.lang.Boolean" jni-return="Ljava/lang/Boolean;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component42" jni-signature="()Ljava/lang/Boolean;" bridge="false" native="false" return="java.lang.Boolean" jni-return="Ljava/lang/Boolean;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component43" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component44" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component45" jni-signature="()Ljava/util/List;" bridge="false" native="false" return="java.util.List&lt;java.lang.String&gt;" jni-return="Ljava/util/List&lt;Ljava/lang/String;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component46" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component47" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component48" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component49" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component5" jni-signature="()Ljava/util/List;" bridge="false" native="false" return="java.util.List&lt;java.lang.String&gt;" jni-return="Ljava/util/List&lt;Ljava/lang/String;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component50" jni-signature="()Lorg/json/JSONObject;" bridge="false" native="false" return="org.json.JSONObject" jni-return="Lorg/json/JSONObject;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component6" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component7" jni-signature="()Lcom/neuroid/tracker/models/NIDSensorModel;" bridge="false" native="false" return="com.neuroid.tracker.models.NIDSensorModel" jni-return="Lcom/neuroid/tracker/models/NIDSensorModel;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component8" jni-signature="()Lcom/neuroid/tracker/models/NIDSensorModel;" bridge="false" native="false" return="com.neuroid.tracker.models.NIDSensorModel" jni-return="Lcom/neuroid/tracker/models/NIDSensorModel;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component9" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="copy" jni-signature="(Ljava/lang/String;Lorg/json/JSONArray;Ljava/util/Map;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Lcom/neuroid/tracker/models/NIDSensorModel;Lcom/neuroid/tracker/models/NIDSensorModel;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLjava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Float;Ljava/lang/Float;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Float;Ljava/lang/Float;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/json/JSONObject;)Lcom/neuroid/tracker/models/NIDEventModel;" bridge="false" native="false" return="com.neuroid.tracker.models.NIDEventModel" jni-return="Lcom/neuroid/tracker/models/NIDEventModel;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true">
+        <parameter name="type" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="attrs" type="org.json.JSONArray" jni-type="Lorg/json/JSONArray;" />
+        <parameter name="tg" type="java.util.Map&lt;java.lang.String, ? extends java.lang.Object&gt;" jni-type="Ljava/util/Map&lt;Ljava/lang/String;+Ljava/lang/Object;&gt;;" />
+        <parameter name="tgs" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="touches" type="java.util.List&lt;java.lang.String&gt;" jni-type="Ljava/util/List&lt;Ljava/lang/String;&gt;;" />
+        <parameter name="key" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="gyro" type="com.neuroid.tracker.models.NIDSensorModel" jni-type="Lcom/neuroid/tracker/models/NIDSensorModel;" />
+        <parameter name="accel" type="com.neuroid.tracker.models.NIDSensorModel" jni-type="Lcom/neuroid/tracker/models/NIDSensorModel;" />
+        <parameter name="v" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="hv" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="en" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="etn" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="ec" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="et" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="eid" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="ct" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="ts" type="long" jni-type="J" />
+        <parameter name="sm" type="java.lang.Integer" jni-type="Ljava/lang/Integer;" />
+        <parameter name="pd" type="java.lang.Integer" jni-type="Ljava/lang/Integer;" />
+        <parameter name="x" type="java.lang.Float" jni-type="Ljava/lang/Float;" />
+        <parameter name="y" type="java.lang.Float" jni-type="Ljava/lang/Float;" />
+        <parameter name="w" type="java.lang.Integer" jni-type="Ljava/lang/Integer;" />
+        <parameter name="h" type="java.lang.Integer" jni-type="Ljava/lang/Integer;" />
+        <parameter name="sw" type="java.lang.Float" jni-type="Ljava/lang/Float;" />
+        <parameter name="sh" type="java.lang.Float" jni-type="Ljava/lang/Float;" />
+        <parameter name="f" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="lsid" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="sid" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="siteId" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="cid" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="did" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="iid" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="loc" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="ua" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="tzo" type="java.lang.Integer" jni-type="Ljava/lang/Integer;" />
+        <parameter name="lng" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="ce" type="java.lang.Boolean" jni-type="Ljava/lang/Boolean;" />
+        <parameter name="je" type="java.lang.Boolean" jni-type="Ljava/lang/Boolean;" />
+        <parameter name="ol" type="java.lang.Boolean" jni-type="Ljava/lang/Boolean;" />
+        <parameter name="p" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="dnt" type="java.lang.Boolean" jni-type="Ljava/lang/Boolean;" />
+        <parameter name="tch" type="java.lang.Boolean" jni-type="Ljava/lang/Boolean;" />
+        <parameter name="url" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="ns" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="jsl" type="java.util.List&lt;java.lang.String&gt;" jni-type="Ljava/util/List&lt;Ljava/lang/String;&gt;;" />
+        <parameter name="jsv" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="uid" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="o" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="rts" type="java.lang.String" jni-type="Ljava/lang/String;" />
+        <parameter name="metadata" type="org.json.JSONObject" jni-type="Lorg/json/JSONObject;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="getAccel" jni-signature="()Lcom/neuroid/tracker/models/NIDSensorModel;" bridge="false" native="false" return="com.neuroid.tracker.models.NIDSensorModel" jni-return="Lcom/neuroid/tracker/models/NIDSensorModel;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getAttrs" jni-signature="()Lorg/json/JSONArray;" bridge="false" native="false" return="org.json.JSONArray" jni-return="Lorg/json/JSONArray;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getCe" jni-signature="()Ljava/lang/Boolean;" bridge="false" native="false" return="java.lang.Boolean" jni-return="Ljava/lang/Boolean;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getCid" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getCt" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getDid" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getDnt" jni-signature="()Ljava/lang/Boolean;" bridge="false" native="false" return="java.lang.Boolean" jni-return="Ljava/lang/Boolean;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getEc" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getEid" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getEn" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getEt" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getEtn" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getF" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getGyro" jni-signature="()Lcom/neuroid/tracker/models/NIDSensorModel;" bridge="false" native="false" return="com.neuroid.tracker.models.NIDSensorModel" jni-return="Lcom/neuroid/tracker/models/NIDSensorModel;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getH" jni-signature="()Ljava/lang/Integer;" bridge="false" native="false" return="java.lang.Integer" jni-return="Ljava/lang/Integer;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getHv" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getIid" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getJe" jni-signature="()Ljava/lang/Boolean;" bridge="false" native="false" return="java.lang.Boolean" jni-return="Ljava/lang/Boolean;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getJsl" jni-signature="()Ljava/util/List;" bridge="false" native="false" return="java.util.List&lt;java.lang.String&gt;" jni-return="Ljava/util/List&lt;Ljava/lang/String;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getJsv" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getKey" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getLng" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getLoc" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getLsid" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getMetadata" jni-signature="()Lorg/json/JSONObject;" bridge="false" native="false" return="org.json.JSONObject" jni-return="Lorg/json/JSONObject;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getNs" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getO" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getOl" jni-signature="()Ljava/lang/Boolean;" bridge="false" native="false" return="java.lang.Boolean" jni-return="Ljava/lang/Boolean;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getOwnJson" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getP" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getPd" jni-signature="()Ljava/lang/Integer;" bridge="false" native="false" return="java.lang.Integer" jni-return="Ljava/lang/Integer;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getRts" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getSh" jni-signature="()Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getSid" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getSiteId" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getSm" jni-signature="()Ljava/lang/Integer;" bridge="false" native="false" return="java.lang.Integer" jni-return="Ljava/lang/Integer;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getSw" jni-signature="()Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getTch" jni-signature="()Ljava/lang/Boolean;" bridge="false" native="false" return="java.lang.Boolean" jni-return="Ljava/lang/Boolean;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getTg" jni-signature="()Ljava/util/Map;" bridge="false" native="false" return="java.util.Map&lt;java.lang.String, java.lang.Object&gt;" jni-return="Ljava/util/Map&lt;Ljava/lang/String;Ljava/lang/Object;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getTgs" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getTouches" jni-signature="()Ljava/util/List;" bridge="false" native="false" return="java.util.List&lt;java.lang.String&gt;" jni-return="Ljava/util/List&lt;Ljava/lang/String;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getTs" jni-signature="()J" bridge="false" native="false" return="long" jni-return="J" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getType" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getTzo" jni-signature="()Ljava/lang/Integer;" bridge="false" native="false" return="java.lang.Integer" jni-return="Ljava/lang/Integer;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getUa" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getUid" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getUrl" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getV" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getW" jni-signature="()Ljava/lang/Integer;" bridge="false" native="false" return="java.lang.Integer" jni-return="Ljava/lang/Integer;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getX" jni-signature="()Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getY" jni-signature="()Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="setEid" jni-signature="(Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="value" type="java.lang.String" jni-type="Ljava/lang/String;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="setRts" jni-signature="(Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="value" type="java.lang.String" jni-type="Ljava/lang/String;" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="NIDSensorModel" static="false" visibility="public" jni-signature="Lcom/neuroid/tracker/models/NIDSensorModel;">
+      <constructor deprecated="not deprecated" final="false" name="NIDSensorModel" jni-signature="(Ljava/lang/Float;Ljava/lang/Float;Ljava/lang/Float;)V" bridge="false" static="false" type="com.neuroid.tracker.models.NIDSensorModel" synthetic="false" visibility="public">
+        <parameter name="x" type="java.lang.Float" jni-type="Ljava/lang/Float;" />
+        <parameter name="y" type="java.lang.Float" jni-type="Ljava/lang/Float;" />
+        <parameter name="z" type="java.lang.Float" jni-type="Ljava/lang/Float;" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="true" name="component1" jni-signature="()Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component2" jni-signature="()Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="component3" jni-signature="()Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="copy" jni-signature="(Ljava/lang/Float;Ljava/lang/Float;Ljava/lang/Float;)Lcom/neuroid/tracker/models/NIDSensorModel;" bridge="false" native="false" return="com.neuroid.tracker.models.NIDSensorModel" jni-return="Lcom/neuroid/tracker/models/NIDSensorModel;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true">
+        <parameter name="x" type="java.lang.Float" jni-type="Ljava/lang/Float;" />
+        <parameter name="y" type="java.lang.Float" jni-type="Ljava/lang/Float;" />
+        <parameter name="z" type="java.lang.Float" jni-type="Ljava/lang/Float;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="getJsonObject" jni-signature="()Lorg/json/JSONObject;" bridge="false" native="false" return="org.json.JSONObject" jni-return="Lorg/json/JSONObject;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getX" jni-signature="()Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getY" jni-signature="()Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getZ" jni-signature="()Ljava/lang/Float;" bridge="false" native="false" return="java.lang.Float" jni-return="Ljava/lang/Float;" static="false" synchronized="false" synthetic="false" visibility="public" />
+    </class>
+  </package>
+  <package name="com.neuroid.tracker.service" jni-name="com/neuroid/tracker/service">
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="NIDJobServiceManager" static="false" visibility="public" jni-signature="Lcom/neuroid/tracker/service/NIDJobServiceManager;">
+      <method abstract="false" deprecated="not deprecated" final="true" name="getUserActive" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="isSendEventsNowEnabled" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="isStopped" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="true" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="restart" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="true" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="sendEventsNow" jni-signature="(ZLkotlin/coroutines/Continuation;)Ljava/lang/Object;" bridge="false" native="false" return="java.lang.Object" jni-return="Ljava/lang/Object;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="forceSendEvents" type="boolean" jni-type="Z" />
+        <parameter name="p1" type="kotlin.coroutines.Continuation&lt;? super kotlin.Unit&gt;" jni-type="Lkotlin/coroutines/Continuation&lt;-Lkotlin/Unit;&gt;;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="setSendEventsNowEnabled" jni-signature="(Z)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="&lt;set-?&gt;" type="boolean" jni-type="Z" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="setUserActive" jni-signature="(Z)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="value" type="boolean" jni-type="Z" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="startJob" jni-signature="(Landroid/app/Application;Ljava/lang/String;Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="true" synthetic="false" visibility="public">
+        <parameter name="application" type="android.app.Application" jni-type="Landroid/app/Application;" not-null="true" />
+        <parameter name="clientKey" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="endpoint" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="stopJob" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="true" synthetic="false" visibility="public" />
+      <field deprecated="not deprecated" final="true" name="INSTANCE" jni-signature="Lcom/neuroid/tracker/service/NIDJobServiceManager;" not-null="true" static="true" transient="false" type="com.neuroid.tracker.service.NIDJobServiceManager" type-generic-aware="com.neuroid.tracker.service.NIDJobServiceManager" visibility="public" volatile="false" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="NIDServiceTracker" static="false" visibility="public" jni-signature="Lcom/neuroid/tracker/service/NIDServiceTracker;">
+      <method abstract="false" deprecated="not deprecated" final="true" name="getContentJson" jni-signature="(Landroid/content/Context;Lorg/json/JSONArray;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;" bridge="false" native="false" return="java.lang.Object" jni-return="Ljava/lang/Object;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;" not-null="true" />
+        <parameter name="events" type="org.json.JSONArray" jni-type="Lorg/json/JSONArray;" not-null="true" />
+        <parameter name="$completion" type="kotlin.coroutines.Continuation&lt;? super java.lang.String&gt;" jni-type="Lkotlin/coroutines/Continuation&lt;-Ljava/lang/String;&gt;;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="getEnvironment" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getFirstScreenName" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getRegisteredViews" jni-signature="()Ljava/util/Set;" bridge="false" native="false" return="java.util.Set&lt;java.lang.String&gt;" jni-return="Ljava/util/Set&lt;Ljava/lang/String;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getRndmId" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getScreenActivityName" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="true" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getScreenFragName" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="true" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getScreenName" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="true" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getSiteId" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="sendEventToServer" jni-signature="(Ljava/lang/String;Ljava/lang/String;Landroid/app/Application;Ljava/util/Set;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;" bridge="false" native="false" return="java.lang.Object" jni-return="Ljava/lang/Object;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="key" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="endpoint" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="context" type="android.app.Application" jni-type="Landroid/app/Application;" not-null="true" />
+        <parameter name="events" type="java.util.Set&lt;java.lang.String&gt;" jni-type="Ljava/util/Set&lt;Ljava/lang/String;&gt;;" />
+        <parameter name="p4" type="kotlin.coroutines.Continuation&lt;? super kotlin.Pair&lt;java.lang.Integer, java.lang.Boolean&gt;&gt;" jni-type="Lkotlin/coroutines/Continuation&lt;-Lkotlin/Pair&lt;Ljava/lang/Integer;Ljava/lang/Boolean;&gt;;&gt;;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="setEnvironment" jni-signature="(Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="value" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="setFirstScreenName" jni-signature="(Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="value" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="setRegisteredViews" jni-signature="(Ljava/util/Set;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="value" type="java.util.Set&lt;java.lang.String&gt;" jni-type="Ljava/util/Set&lt;Ljava/lang/String;&gt;;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="setRndmId" jni-signature="(Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="value" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="setScreenActivityName" jni-signature="(Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="true" synthetic="false" visibility="public">
+        <parameter name="value" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="setScreenFragName" jni-signature="(Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="true" synthetic="false" visibility="public">
+        <parameter name="value" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="setScreenName" jni-signature="(Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="true" synthetic="false" visibility="public">
+        <parameter name="value" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="setSiteId" jni-signature="(Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="value" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+      </method>
+      <field deprecated="not deprecated" final="true" name="INSTANCE" jni-signature="Lcom/neuroid/tracker/service/NIDServiceTracker;" not-null="true" static="true" transient="false" type="com.neuroid.tracker.service.NIDServiceTracker" type-generic-aware="com.neuroid.tracker.service.NIDServiceTracker" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="NID_ERROR_SERVICE" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="NID_OK_SERVICE" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false" />
+    </class>
+  </package>
+  <package name="com.neuroid.tracker.storage" jni-name="com/neuroid/tracker/storage">
+    <interface abstract="true" deprecated="not deprecated" final="false" name="NIDDataStoreManager" static="false" visibility="public" jni-signature="Lcom/neuroid/tracker/storage/NIDDataStoreManager;">
+      <method abstract="true" deprecated="not deprecated" final="false" name="addViewIdExclude" jni-signature="(Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="id" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="clearEvents" jni-signature="(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;" bridge="false" native="false" return="java.lang.Object" jni-return="Ljava/lang/Object;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="kotlin.coroutines.Continuation&lt;? super kotlin.Unit&gt;" jni-type="Lkotlin/coroutines/Continuation&lt;-Lkotlin/Unit;&gt;;" not-null="true" />
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="getAllEvents" jni-signature="(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;" bridge="false" native="false" return="java.lang.Object" jni-return="Ljava/lang/Object;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="kotlin.coroutines.Continuation&lt;? super java.util.Set&lt;java.lang.String&gt;&gt;" jni-type="Lkotlin/coroutines/Continuation&lt;-Ljava/util/Set&lt;Ljava/lang/String;&gt;;&gt;;" not-null="true" />
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="getJsonPayload" jni-signature="(Landroid/content/Context;)Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;" not-null="true" />
+      </method>
+      <method abstract="true" deprecated="not deprecated" final="false" name="resetJsonPayload" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="true" deprecated="not deprecated" final="false" name="saveEvent" jni-signature="(Lcom/neuroid/tracker/models/NIDEventModel;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="event" type="com.neuroid.tracker.models.NIDEventModel" jni-type="Lcom/neuroid/tracker/models/NIDEventModel;" not-null="true" />
+      </method>
+    </interface>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="NIDDataStoreManagerImp" static="false" visibility="" jni-signature="Lcom/neuroid/tracker/storage/NIDDataStoreManagerImp;">
+      <implements name="com.neuroid.tracker.storage.NIDDataStoreManager" name-generic-aware="com.neuroid.tracker.storage.NIDDataStoreManager" jni-type="Lcom/neuroid/tracker/storage/NIDDataStoreManager;" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="addViewIdExclude" jni-signature="(Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="id" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="clearEvents" jni-signature="(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;" bridge="false" native="false" return="java.lang.Object" jni-return="Ljava/lang/Object;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="$completion" type="kotlin.coroutines.Continuation&lt;? super kotlin.Unit&gt;" jni-type="Lkotlin/coroutines/Continuation&lt;-Lkotlin/Unit;&gt;;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getAllEvents" jni-signature="(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;" bridge="false" native="false" return="java.lang.Object" jni-return="Ljava/lang/Object;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="kotlin.coroutines.Continuation&lt;? super java.util.Set&lt;java.lang.String&gt;&gt;" jni-type="Lkotlin/coroutines/Continuation&lt;-Ljava/util/Set&lt;Ljava/lang/String;&gt;;&gt;;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="getJsonPayload" jni-signature="(Landroid/content/Context;)Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="init" jni-signature="(Landroid/content/Context;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="resetJsonPayload" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="false" name="saveEvent" jni-signature="(Lcom/neuroid/tracker/models/NIDEventModel;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="true" synthetic="false" visibility="public">
+        <parameter name="event" type="com.neuroid.tracker.models.NIDEventModel" jni-type="Lcom/neuroid/tracker/models/NIDEventModel;" not-null="true" />
+      </method>
+      <field deprecated="not deprecated" final="true" name="INSTANCE" jni-signature="Lcom/neuroid/tracker/storage/NIDDataStoreManagerImp;" not-null="true" static="true" transient="false" type="com.neuroid.tracker.storage.NIDDataStoreManagerImp" type-generic-aware="com.neuroid.tracker.storage.NIDDataStoreManagerImp" visibility="public" volatile="false" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="NIDDataStoreManagerKt" static="false" visibility="public" jni-signature="Lcom/neuroid/tracker/storage/NIDDataStoreManagerKt;">
+      <method abstract="false" deprecated="not deprecated" final="true" name="getDataStoreInstance" jni-signature="()Lcom/neuroid/tracker/storage/NIDDataStoreManager;" bridge="false" native="false" return="com.neuroid.tracker.storage.NIDDataStoreManager" jni-return="Lcom/neuroid/tracker/storage/NIDDataStoreManager;" static="true" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="initDataStoreCtx" jni-signature="(Landroid/content/Context;)V" bridge="false" native="false" return="void" jni-return="V" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;" not-null="true" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="NIDSharedPrefsDefaults" static="false" visibility="public" jni-signature="Lcom/neuroid/tracker/storage/NIDSharedPrefsDefaults;">
+      <constructor deprecated="not deprecated" final="false" name="NIDSharedPrefsDefaults" jni-signature="(Landroid/content/Context;)V" bridge="false" static="false" type="com.neuroid.tracker.storage.NIDSharedPrefsDefaults" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;" not-null="true" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="true" name="generateUniqueHexId" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getClientId" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getDeviceId" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getIntermediateId" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getLanguage" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getLocale" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getNewSessionID" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getPlatform" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getSessionID" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getTimeZone" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getUserAgent" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getUserId" jni-signature="()Ljava/lang/Object;" bridge="false" native="false" return="java.lang.Object" jni-return="Ljava/lang/Object;" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="resetClientId" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="setUserId" jni-signature="(Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="userId" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+      </method>
+      <field deprecated="not deprecated" final="true" name="Companion" jni-signature="Lcom/neuroid/tracker/storage/NIDSharedPrefsDefaults$Companion;" not-null="true" static="true" transient="false" type="com.neuroid.tracker.storage.NIDSharedPrefsDefaults.Companion" type-generic-aware="com.neuroid.tracker.storage.NIDSharedPrefsDefaults.Companion" visibility="public" volatile="false" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="NIDSharedPrefsDefaults.Companion" static="true" visibility="public" jni-signature="Lcom/neuroid/tracker/storage/NIDSharedPrefsDefaults$Companion;">
+      <constructor deprecated="not deprecated" final="false" name="NIDSharedPrefsDefaults.Companion" jni-signature="(Lkotlin/jvm/internal/DefaultConstructorMarker;)V" bridge="false" static="false" type="com.neuroid.tracker.storage.NIDSharedPrefsDefaults.Companion" synthetic="true" visibility="public">
+        <parameter name="$constructor_marker" type="kotlin.jvm.internal.DefaultConstructorMarker" jni-type="Lkotlin/jvm/internal/DefaultConstructorMarker;" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="true" name="getDisplayHeight" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getDisplayWidth" jni-signature="()I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getHexRandomID" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+    </class>
+  </package>
+  <package name="com.neuroid.tracker.utils" jni-name="com/neuroid/tracker/utils">
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="JsonUtils" static="false" visibility="public" jni-signature="Lcom/neuroid/tracker/utils/JsonUtils;">
+      <constructor deprecated="not deprecated" final="false" name="JsonUtils" jni-signature="()V" bridge="false" static="false" type="com.neuroid.tracker.utils.JsonUtils" synthetic="false" visibility="public" />
+      <field deprecated="not deprecated" final="true" name="Companion" jni-signature="Lcom/neuroid/tracker/utils/JsonUtils$Companion;" not-null="true" static="true" transient="false" type="com.neuroid.tracker.utils.JsonUtils.Companion" type-generic-aware="com.neuroid.tracker.utils.JsonUtils.Companion" visibility="public" volatile="false" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="JsonUtils.Companion" static="true" visibility="public" jni-signature="Lcom/neuroid/tracker/utils/JsonUtils$Companion;">
+      <constructor deprecated="not deprecated" final="false" name="JsonUtils.Companion" jni-signature="(Lkotlin/jvm/internal/DefaultConstructorMarker;)V" bridge="false" static="false" type="com.neuroid.tracker.utils.JsonUtils.Companion" synthetic="true" visibility="public">
+        <parameter name="$constructor_marker" type="kotlin.jvm.internal.DefaultConstructorMarker" jni-type="Lkotlin/jvm/internal/DefaultConstructorMarker;" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="true" name="getAttrJson" jni-signature="(Ljava/lang/String;)Lorg/json/JSONArray;" bridge="false" native="false" return="org.json.JSONArray" jni-return="Lorg/json/JSONArray;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true">
+        <parameter name="text" type="java.lang.String" jni-type="Ljava/lang/String;" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="NIDLog" static="false" visibility="public" jni-signature="Lcom/neuroid/tracker/utils/NIDLog;">
+      <method abstract="false" deprecated="not deprecated" final="true" name="d" jni-signature="(Ljava/lang/String;Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="tag" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="msg" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="e" jni-signature="(Ljava/lang/String;Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="tag" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="msg" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="i" jni-signature="(Ljava/lang/String;Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="tag" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="msg" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="v" jni-signature="(Ljava/lang/String;Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="tag" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="msg" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="w" jni-signature="(Ljava/lang/String;Ljava/lang/String;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="tag" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+        <parameter name="msg" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+      </method>
+      <field deprecated="not deprecated" final="true" name="CHECK_BOX_CHANGE_TAG" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;CheckBoxChange&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="CHECK_BOX_ID" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;CheckBoxID:&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="INSTANCE" jni-signature="Lcom/neuroid/tracker/utils/NIDLog;" not-null="true" static="true" transient="false" type="com.neuroid.tracker.utils.NIDLog" type-generic-aware="com.neuroid.tracker.utils.NIDLog" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="RADIO_BUTTON_CHANGE_TAG" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;RadioButtonChange&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="RADIO_BUTTON_ID" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;RadioButtonID:&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="SLIDER_CHANGE_TAG" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;SliderChange&quot;" visibility="public" volatile="false" />
+      <field deprecated="not deprecated" final="true" name="SLIDER_ID" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;SliderID:&quot;" visibility="public" volatile="false" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="NIDMetaData" static="false" visibility="public" jni-signature="Lcom/neuroid/tracker/utils/NIDMetaData;">
+      <constructor deprecated="not deprecated" final="false" name="NIDMetaData" jni-signature="(Landroid/content/Context;)V" bridge="false" static="false" type="com.neuroid.tracker.utils.NIDMetaData" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;" not-null="true" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="true" name="toJson" jni-signature="()Lorg/json/JSONObject;" bridge="false" native="false" return="org.json.JSONObject" jni-return="Lorg/json/JSONObject;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="NIDSingletonIDs" static="false" visibility="public" jni-signature="Lcom/neuroid/tracker/utils/NIDSingletonIDs;">
+      <method abstract="false" deprecated="not deprecated" final="true" name="getSalt" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="updateSalt" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <field deprecated="not deprecated" final="true" name="INSTANCE" jni-signature="Lcom/neuroid/tracker/utils/NIDSingletonIDs;" not-null="true" static="true" transient="false" type="com.neuroid.tracker.utils.NIDSingletonIDs" type-generic-aware="com.neuroid.tracker.utils.NIDSingletonIDs" visibility="public" volatile="false" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="NIDTextWatcher" static="false" visibility="public" jni-signature="Lcom/neuroid/tracker/utils/NIDTextWatcher;">
+      <implements name="android.text.TextWatcher" name-generic-aware="android.text.TextWatcher" jni-type="Landroid/text/TextWatcher;" />
+      <constructor deprecated="not deprecated" final="false" name="NIDTextWatcher" jni-signature="(Ljava/lang/String;)V" bridge="false" static="false" type="com.neuroid.tracker.utils.NIDTextWatcher" synthetic="false" visibility="public">
+        <parameter name="idName" type="java.lang.String" jni-type="Ljava/lang/String;" not-null="true" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="afterTextChanged" jni-signature="(Landroid/text/Editable;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="sequence" type="android.text.Editable" jni-type="Landroid/text/Editable;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="beforeTextChanged" jni-signature="(Ljava/lang/CharSequence;III)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="java.lang.CharSequence" jni-type="Ljava/lang/CharSequence;" />
+        <parameter name="p1" type="int" jni-type="I" />
+        <parameter name="p2" type="int" jni-type="I" />
+        <parameter name="p3" type="int" jni-type="I" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onTextChanged" jni-signature="(Ljava/lang/CharSequence;III)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="sequence" type="java.lang.CharSequence" jni-type="Ljava/lang/CharSequence;" />
+        <parameter name="start" type="int" jni-type="I" />
+        <parameter name="before" type="int" jni-type="I" />
+        <parameter name="count" type="int" jni-type="I" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="NIDTimerActive" static="false" visibility="public" jni-signature="Lcom/neuroid/tracker/utils/NIDTimerActive;">
+      <method abstract="false" deprecated="not deprecated" final="true" name="initTimer" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="restartTimerActive" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="true" synthetic="false" visibility="public" />
+      <field deprecated="not deprecated" final="true" name="INSTANCE" jni-signature="Lcom/neuroid/tracker/utils/NIDTimerActive;" not-null="true" static="true" transient="false" type="com.neuroid.tracker.utils.NIDTimerActive" type-generic-aware="com.neuroid.tracker.utils.NIDTimerActive" visibility="public" volatile="false" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="NIDVersion" static="false" visibility="public" jni-signature="Lcom/neuroid/tracker/utils/NIDVersion;">
+      <method abstract="false" deprecated="not deprecated" final="true" name="getInternalCurrentVersion" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getSDKVersion" jni-signature="()Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <field deprecated="not deprecated" final="true" name="INSTANCE" jni-signature="Lcom/neuroid/tracker/utils/NIDVersion;" not-null="true" static="true" transient="false" type="com.neuroid.tracker.utils.NIDVersion" type-generic-aware="com.neuroid.tracker.utils.NIDVersion" visibility="public" volatile="false" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="NIDViewsExtensionsKt" static="false" visibility="public" jni-signature="Lcom/neuroid/tracker/utils/NIDViewsExtensionsKt;">
+      <method abstract="false" deprecated="not deprecated" final="true" name="getIdOrTag" jni-signature="(Landroid/view/View;)Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="true" synchronized="false" synthetic="false" visibility="public" return-not-null="true">
+        <parameter name="obj" type="android.view.View" jni-type="Landroid/view/View;" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="getParents" jni-signature="(Landroid/view/View;)Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="true" synchronized="false" synthetic="false" visibility="public" return-not-null="true">
+        <parameter name="obj" type="android.view.View" jni-type="Landroid/view/View;" not-null="true" />
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="true" name="getRandomId" jni-signature="(Landroid/view/View;)Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="true" synchronized="false" synthetic="false" visibility="public" return-not-null="true">
+        <parameter name="obj" type="android.view.View" jni-type="Landroid/view/View;" not-null="true" />
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="RootHelper" static="false" visibility="public" jni-signature="Lcom/neuroid/tracker/utils/RootHelper;">
+      <constructor deprecated="not deprecated" final="false" name="RootHelper" jni-signature="()V" bridge="false" static="false" type="com.neuroid.tracker.utils.RootHelper" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="isProbablyEmulator" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="isRooted" jni-signature="(Landroid/content/Context;)Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;" not-null="true" />
+      </method>
+      <field deprecated="deprecated" final="true" name="BINARY_BUSYBOX" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;busybox&quot;" visibility="public" volatile="false" />
+      <field deprecated="deprecated" final="true" name="BINARY_SU" jni-signature="Ljava/lang/String;" not-null="true" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;su&quot;" visibility="public" volatile="false" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="RootHelper.Companion" static="true" visibility="private" jni-signature="Lcom/neuroid/tracker/utils/RootHelper$Companion;">
+      <constructor deprecated="not deprecated" final="false" name="RootHelper.Companion" jni-signature="(Lkotlin/jvm/internal/DefaultConstructorMarker;)V" bridge="false" static="false" type="com.neuroid.tracker.utils.RootHelper.Companion" synthetic="true" visibility="public">
+        <parameter name="$constructor_marker" type="kotlin.jvm.internal.DefaultConstructorMarker" jni-type="Lkotlin/jvm/internal/DefaultConstructorMarker;" />
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="true" name="getKnownDangerousAppsPackages" jni-signature="()Ljava/util/List;" bridge="false" native="false" return="java.util.List&lt;java.lang.String&gt;" jni-return="Ljava/util/List&lt;Ljava/lang/String;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getKnownRootAppsPackages" jni-signature="()Ljava/util/List;" bridge="false" native="false" return="java.util.List&lt;java.lang.String&gt;" jni-return="Ljava/util/List&lt;Ljava/lang/String;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+      <method abstract="false" deprecated="not deprecated" final="true" name="getSuPaths" jni-signature="()Ljava/util/List;" bridge="false" native="false" return="java.util.List&lt;java.lang.String&gt;" jni-return="Ljava/util/List&lt;Ljava/lang/String;&gt;;" static="false" synchronized="false" synthetic="false" visibility="public" return-not-null="true" />
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="UtilExtKt" static="false" visibility="public" jni-signature="Lcom/neuroid/tracker/utils/UtilExtKt;">
+      <method abstract="false" deprecated="not deprecated" final="true" name="getGUID" jni-signature="(Landroid/app/Activity;)Ljava/lang/String;" bridge="false" native="false" return="java.lang.String" jni-return="Ljava/lang/String;" static="true" synchronized="false" synthetic="false" visibility="public" return-not-null="true">
+        <parameter name="obj" type="android.app.Activity" jni-type="Landroid/app/Activity;" not-null="true" />
+      </method>
+    </class>
+  </package>
+</api>

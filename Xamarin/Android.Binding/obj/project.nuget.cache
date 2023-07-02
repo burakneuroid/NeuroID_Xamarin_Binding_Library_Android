@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "dgSpecHash": "jj8AHJmHHY0J/Nil5oGKv2Gl+SJciqouJvHy63HpiYKHOhQMLoV6JSBxBRIDygzQqeIX/ymVeY10BVwN3lhGJA==",
+  "success": true,
+  "projectFilePath": "/Users/burakkebapci/Desktop/AndroidBinding/Xamarin/Android.Binding/Android.Binding.csproj",
+  "expectedPackageFiles": [
+    "/Users/burakkebapci/.nuget/packages/xamarin.androidx.annotation/1.2.0/xamarin.androidx.annotation.1.2.0.nupkg.sha512",
+    "/Users/burakkebapci/.nuget/packages/xamarin.androidx.arch.core.common/2.1.0.8/xamarin.androidx.arch.core.common.2.1.0.8.nupkg.sha512",
+    "/Users/burakkebapci/.nuget/packages/xamarin.androidx.arch.core.runtime/2.1.0.8/xamarin.androidx.arch.core.runtime.2.1.0.8.nupkg.sha512",
+    "/Users/burakkebapci/.nuget/packages/xamarin.androidx.collection/1.1.0.7/xamarin.androidx.collection.1.1.0.7.nupkg.sha512",
+    "/Users/burakkebapci/.nuget/packages/xamarin.androidx.core/1.5.0/xamarin.androidx.core.1.5.0.nupkg.sha512",
+    "/Users/burakkebapci/.nuget/packages/xamarin.androidx.core.core.ktx/1.5.0/xamarin.androidx.core.core.ktx.1.5.0.nupkg.sha512",
+    "/Users/burakkebapci/.nuget/packages/xamarin.androidx.lifecycle.common/2.3.1/xamarin.androidx.lifecycle.common.2.3.1.nupkg.sha512",
+    "/Users/burakkebapci/.nuget/packages/xamarin.androidx.lifecycle.runtime/2.3.1.1/xamarin.androidx.lifecycle.runtime.2.3.1.1.nupkg.sha512",
+    "/Users/burakkebapci/.nuget/packages/xamarin.androidx.migration/1.0.8/xamarin.androidx.migration.1.0.8.nupkg.sha512",
+    "/Users/burakkebapci/.nuget/packages/xamarin.androidx.multidex/2.0.1.5/xamarin.androidx.multidex.2.0.1.5.nupkg.sha512",
+    "/Users/burakkebapci/.nuget/packages/xamarin.androidx.versionedparcelable/1.1.1.7/xamarin.androidx.versionedparcelable.1.1.1.7.nupkg.sha512",
+    "/Users/burakkebapci/.nuget/packages/xamarin.jetbrains.annotations/13.0.0.4/xamarin.jetbrains.annotations.13.0.0.4.nupkg.sha512",
+    "/Users/burakkebapci/.nuget/packages/xamarin.kotlin.stdlib/1.5.10/xamarin.kotlin.stdlib.1.5.10.nupkg.sha512",
+    "/Users/burakkebapci/.nuget/packages/xamarin.kotlin.stdlib.common/1.5.10/xamarin.kotlin.stdlib.common.1.5.10.nupkg.sha512",
+    "/Users/burakkebapci/.nuget/packages/xamarin.kotlinx.coroutines.android/1.5.0/xamarin.kotlinx.coroutines.android.1.5.0.nupkg.sha512",
+    "/Users/burakkebapci/.nuget/packages/xamarin.kotlinx.coroutines.core.jvm/1.5.0/xamarin.kotlinx.coroutines.core.jvm.1.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,67 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/burakkebapci/Desktop/AndroidBinding/Xamarin/Android.Binding/Android.Binding.csproj": {}
+  },
+  "projects": {
+    "/Users/burakkebapci/Desktop/AndroidBinding/Xamarin/Android.Binding/Android.Binding.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/burakkebapci/Desktop/AndroidBinding/Xamarin/Android.Binding/Android.Binding.csproj",
+        "projectName": "testBubblePicker.Binding",
+        "projectPath": "/Users/burakkebapci/Desktop/AndroidBinding/Xamarin/Android.Binding/Android.Binding.csproj",
+        "packagesPath": "/Users/burakkebapci/.nuget/packages/",
+        "outputPath": "/Users/burakkebapci/Desktop/AndroidBinding/Xamarin/Android.Binding/obj/",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "/Users/burakkebapci/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid90"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid90": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid90": {
+          "dependencies": {
+            "Xamarin.AndroidX.Core.Core.Ktx": {
+              "target": "Package",
+              "version": "[1.5.0, )"
+            },
+            "Xamarin.Kotlin.StdLib": {
+              "target": "Package",
+              "version": "[1.5.10, )"
+            },
+            "Xamarin.KotlinX.Coroutines.Android": {
+              "target": "Package",
+              "version": "[1.5.0, )"
+            },
+            "Xamarin.KotlinX.Coroutines.Core.Jvm": {
+              "target": "Package",
+              "version": "[1.5.0, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
