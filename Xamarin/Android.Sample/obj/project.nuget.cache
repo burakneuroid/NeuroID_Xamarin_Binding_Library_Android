@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0xVibghSrSUnUnP3QLcIGxWmBXBjgEigIxPyM3aewP2q/VTZ4Z5SXOXCMudef36vaQ9d5SO7SSgY8vHGn0OmIA==",
+  "dgSpecHash": "ND2B40AF8BDtt1kG0vUOhppbXtMyv60J3Zjw+NWfZUJEbngZXdrPXoz2OBlUa/hynB4khBpaoaqcNxisDSi0mg==",
   "success": true,
-  "projectFilePath": "/Users/burakkebapci/Desktop/AndroidBinding/Xamarin/Android.Sample/Android.Sample.csproj",
+  "projectFilePath": "/Users/burakkebapci/Downloads/NeuroID_Xamarin_Binding_Library_Android-main/Xamarin/Android.Sample/Android.Sample.csproj",
   "expectedPackageFiles": [
     "/Users/burakkebapci/.nuget/packages/xamarin.android.arch.core.common/1.1.1.3/xamarin.android.arch.core.common.1.1.1.3.nupkg.sha512",
     "/Users/burakkebapci/.nuget/packages/xamarin.android.arch.core.runtime/1.1.1.3/xamarin.android.arch.core.runtime.1.1.1.3.nupkg.sha512",
@@ -90,7 +90,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.AndroidX.AppCompat.AppCompatResources from 1.3.1 to 1.3.0. Reference the package directly from the project to select a different version. \n AndroidSample -> Xamarin.AndroidX.AppCompat 1.3.1 -> Xamarin.AndroidX.AppCompat.AppCompatResources (>= 1.3.1) \n AndroidSample -> Xamarin.AndroidX.AppCompat.AppCompatResources (>= 1.3.0)",
+      "message": "Detected package downgrade: Xamarin.AndroidX.AppCompat.AppCompatResources from 1.3.1 to 1.3.0. Reference the package directly from the project to select a different version. \n NeuroIDXamarinAndroid -> Xamarin.AndroidX.AppCompat 1.3.1 -> Xamarin.AndroidX.AppCompat.AppCompatResources (>= 1.3.1) \n NeuroIDXamarinAndroid -> Xamarin.AndroidX.AppCompat.AppCompatResources (>= 1.3.0)",
       "libraryId": "Xamarin.AndroidX.AppCompat.AppCompatResources",
       "targetGraphs": [
         "MonoAndroid,Version=v9.0"
@@ -100,17 +100,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.AndroidX.CoordinatorLayout from 1.1.0.1 to 1.1.0. Reference the package directly from the project to select a different version. \n AndroidSample -> Xamarin.AndroidX.Legacy.Support.Core.UI 1.0.0.1 -> Xamarin.AndroidX.CoordinatorLayout (>= 1.1.0.1) \n AndroidSample -> Xamarin.AndroidX.CoordinatorLayout (>= 1.1.0)",
-      "libraryId": "Xamarin.AndroidX.CoordinatorLayout",
-      "targetGraphs": [
-        "MonoAndroid,Version=v9.0"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.AndroidX.Legacy.Support.Core.UI from 1.0.0.4 to 1.0.0.1. Reference the package directly from the project to select a different version. \n AndroidSample -> Xamarin.AndroidX.Legacy.Support.V4 1.0.0.4 -> Xamarin.AndroidX.Legacy.Support.Core.UI (>= 1.0.0.4) \n AndroidSample -> Xamarin.AndroidX.Legacy.Support.Core.UI (>= 1.0.0.1)",
+      "message": "Detected package downgrade: Xamarin.AndroidX.Legacy.Support.Core.UI from 1.0.0.4 to 1.0.0.1. Reference the package directly from the project to select a different version. \n NeuroIDXamarinAndroid -> Xamarin.AndroidX.Legacy.Support.V4 1.0.0.4 -> Xamarin.AndroidX.Legacy.Support.Core.UI (>= 1.0.0.4) \n NeuroIDXamarinAndroid -> Xamarin.AndroidX.Legacy.Support.Core.UI (>= 1.0.0.1)",
       "libraryId": "Xamarin.AndroidX.Legacy.Support.Core.UI",
       "targetGraphs": [
         "MonoAndroid,Version=v9.0"
@@ -120,7 +110,17 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.AndroidX.Lifecycle.LiveData.Core from 2.3.1 to 2.2.0. Reference the package directly from the project to select a different version. \n AndroidSample -> Xamarin.AndroidX.AppCompat 1.3.1 -> Xamarin.AndroidX.Fragment 1.3.6 -> Xamarin.AndroidX.Lifecycle.LiveData.Core (>= 2.3.1) \n AndroidSample -> Xamarin.AndroidX.Lifecycle.LiveData.Core (>= 2.2.0)",
+      "message": "Detected package downgrade: Xamarin.AndroidX.CoordinatorLayout from 1.1.0.1 to 1.1.0. Reference the package directly from the project to select a different version. \n NeuroIDXamarinAndroid -> Xamarin.AndroidX.Legacy.Support.Core.UI 1.0.0.1 -> Xamarin.AndroidX.CoordinatorLayout (>= 1.1.0.1) \n NeuroIDXamarinAndroid -> Xamarin.AndroidX.CoordinatorLayout (>= 1.1.0)",
+      "libraryId": "Xamarin.AndroidX.CoordinatorLayout",
+      "targetGraphs": [
+        "MonoAndroid,Version=v9.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.AndroidX.Lifecycle.LiveData.Core from 2.3.1 to 2.2.0. Reference the package directly from the project to select a different version. \n NeuroIDXamarinAndroid -> Xamarin.AndroidX.AppCompat 1.3.1 -> Xamarin.AndroidX.Fragment 1.3.6 -> Xamarin.AndroidX.Lifecycle.LiveData.Core (>= 2.3.1) \n NeuroIDXamarinAndroid -> Xamarin.AndroidX.Lifecycle.LiveData.Core (>= 2.2.0)",
       "libraryId": "Xamarin.AndroidX.Lifecycle.LiveData.Core",
       "targetGraphs": [
         "MonoAndroid,Version=v9.0"
@@ -130,7 +130,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.AndroidX.Lifecycle.LiveData.Core from 2.3.1 to 2.2.0. Reference the package directly from the project to select a different version. \n AndroidSample -> Xamarin.AndroidX.AppCompat 1.3.1 -> Xamarin.AndroidX.Activity 1.2.4 -> Xamarin.AndroidX.Lifecycle.ViewModelSavedState 2.3.1 -> Xamarin.AndroidX.Lifecycle.LiveData.Core (>= 2.3.1) \n AndroidSample -> Xamarin.AndroidX.Lifecycle.LiveData.Core (>= 2.2.0)",
+      "message": "Detected package downgrade: Xamarin.AndroidX.Lifecycle.LiveData.Core from 2.3.0.2-alpha03 to 2.2.0. Reference the package directly from the project to select a different version. \n NeuroIDXamarinAndroid -> Xamarin.AndroidX.Legacy.Support.V4 1.0.0.4 -> Xamarin.AndroidX.Fragment 1.2.5.2 -> Xamarin.AndroidX.Lifecycle.LiveData.Core (>= 2.3.0.2-alpha03) \n NeuroIDXamarinAndroid -> Xamarin.AndroidX.Lifecycle.LiveData.Core (>= 2.2.0)",
       "libraryId": "Xamarin.AndroidX.Lifecycle.LiveData.Core",
       "targetGraphs": [
         "MonoAndroid,Version=v9.0"
@@ -140,7 +140,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.AndroidX.MultiDex from 2.0.1.5 to 2.0.1. Reference the package directly from the project to select a different version. \n AndroidSample -> Xamarin.AndroidX.AppCompat 1.3.1 -> Xamarin.AndroidX.Annotation 1.2.0 -> Xamarin.AndroidX.Migration 1.0.8 -> Xamarin.AndroidX.MultiDex (>= 2.0.1.5) \n AndroidSample -> Xamarin.AndroidX.MultiDex (>= 2.0.1)",
+      "message": "Detected package downgrade: Xamarin.AndroidX.MultiDex from 2.0.1.5 to 2.0.1. Reference the package directly from the project to select a different version. \n NeuroIDXamarinAndroid -> Xamarin.AndroidX.AppCompat.AppCompatResources 1.3.0 -> Xamarin.AndroidX.Annotation 1.2.0 -> Xamarin.AndroidX.Migration 1.0.8 -> Xamarin.AndroidX.MultiDex (>= 2.0.1.5) \n NeuroIDXamarinAndroid -> Xamarin.AndroidX.MultiDex (>= 2.0.1)",
       "libraryId": "Xamarin.AndroidX.MultiDex",
       "targetGraphs": [
         "MonoAndroid,Version=v9.0"
@@ -150,7 +150,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.AndroidX.MultiDex from 2.0.1.5 to 2.0.1. Reference the package directly from the project to select a different version. \n AndroidSample -> Xamarin.AndroidX.AppCompat.AppCompatResources 1.3.0 -> Xamarin.AndroidX.Annotation 1.2.0 -> Xamarin.AndroidX.Migration 1.0.8 -> Xamarin.AndroidX.MultiDex (>= 2.0.1.5) \n AndroidSample -> Xamarin.AndroidX.MultiDex (>= 2.0.1)",
+      "message": "Detected package downgrade: Xamarin.AndroidX.MultiDex from 2.0.1.5 to 2.0.1. Reference the package directly from the project to select a different version. \n NeuroIDXamarinAndroid -> Xamarin.AndroidX.Browser 1.3.0 -> Xamarin.AndroidX.Annotation 1.1.0.7 -> Xamarin.AndroidX.Migration 1.0.8 -> Xamarin.AndroidX.MultiDex (>= 2.0.1.5) \n NeuroIDXamarinAndroid -> Xamarin.AndroidX.MultiDex (>= 2.0.1)",
       "libraryId": "Xamarin.AndroidX.MultiDex",
       "targetGraphs": [
         "MonoAndroid,Version=v9.0"
@@ -160,7 +160,87 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.AndroidX.MultiDex from 2.0.1.5 to 2.0.1. Reference the package directly from the project to select a different version. \n AndroidSample -> Android.Binding -> Xamarin.AndroidX.Core.Core.Ktx 1.5.0 -> Xamarin.AndroidX.Annotation 1.2.0 -> Xamarin.AndroidX.Migration 1.0.8 -> Xamarin.AndroidX.MultiDex (>= 2.0.1.5) \n AndroidSample -> Xamarin.AndroidX.MultiDex (>= 2.0.1)",
+      "message": "Detected package downgrade: Xamarin.AndroidX.MultiDex from 2.0.1.5 to 2.0.1. Reference the package directly from the project to select a different version. \n NeuroIDXamarinAndroid -> Xamarin.AndroidX.AppCompat 1.3.1 -> Xamarin.AndroidX.Annotation 1.2.0 -> Xamarin.AndroidX.Migration 1.0.8 -> Xamarin.AndroidX.MultiDex (>= 2.0.1.5) \n NeuroIDXamarinAndroid -> Xamarin.AndroidX.MultiDex (>= 2.0.1)",
+      "libraryId": "Xamarin.AndroidX.MultiDex",
+      "targetGraphs": [
+        "MonoAndroid,Version=v9.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.AndroidX.Lifecycle.LiveData.Core from 2.3.1 to 2.2.0. Reference the package directly from the project to select a different version. \n NeuroIDXamarinAndroid -> Xamarin.AndroidX.AppCompat 1.3.1 -> Xamarin.AndroidX.Activity 1.2.4 -> Xamarin.AndroidX.Lifecycle.ViewModelSavedState 2.3.1 -> Xamarin.AndroidX.Lifecycle.LiveData.Core (>= 2.3.1) \n NeuroIDXamarinAndroid -> Xamarin.AndroidX.Lifecycle.LiveData.Core (>= 2.2.0)",
+      "libraryId": "Xamarin.AndroidX.Lifecycle.LiveData.Core",
+      "targetGraphs": [
+        "MonoAndroid,Version=v9.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.AndroidX.Lifecycle.LiveData.Core from 2.3.0.2-alpha03 to 2.2.0. Reference the package directly from the project to select a different version. \n NeuroIDXamarinAndroid -> Xamarin.AndroidX.Legacy.Support.V4 1.0.0.4 -> Xamarin.AndroidX.Legacy.Support.Core.Utils 1.0.0.4 -> Xamarin.AndroidX.Loader 1.1.0.4 -> Xamarin.AndroidX.Lifecycle.LiveData.Core (>= 2.3.0.2-alpha03) \n NeuroIDXamarinAndroid -> Xamarin.AndroidX.Lifecycle.LiveData.Core (>= 2.2.0)",
+      "libraryId": "Xamarin.AndroidX.Lifecycle.LiveData.Core",
+      "targetGraphs": [
+        "MonoAndroid,Version=v9.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.AndroidX.MultiDex from 2.0.1.1 to 2.0.1. Reference the package directly from the project to select a different version. \n NeuroIDXamarinAndroid -> Xamarin.AndroidX.Legacy.Support.Core.UI 1.0.0.1 -> Xamarin.AndroidX.Annotation 1.1.0.1 -> Xamarin.AndroidX.Migration 1.0.0.1 -> Xamarin.AndroidX.MultiDex (>= 2.0.1.1) \n NeuroIDXamarinAndroid -> Xamarin.AndroidX.MultiDex (>= 2.0.1)",
+      "libraryId": "Xamarin.AndroidX.MultiDex",
+      "targetGraphs": [
+        "MonoAndroid,Version=v9.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.AndroidX.MultiDex from 2.0.1.5 to 2.0.1. Reference the package directly from the project to select a different version. \n NeuroIDXamarinAndroid -> testBubblePicker.Binding -> Xamarin.AndroidX.Core.Core.Ktx 1.5.0 -> Xamarin.AndroidX.Annotation 1.2.0 -> Xamarin.AndroidX.Migration 1.0.8 -> Xamarin.AndroidX.MultiDex (>= 2.0.1.5) \n NeuroIDXamarinAndroid -> Xamarin.AndroidX.MultiDex (>= 2.0.1)",
+      "libraryId": "Xamarin.AndroidX.MultiDex",
+      "targetGraphs": [
+        "MonoAndroid,Version=v9.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.AndroidX.MultiDex from 2.0.1.4 to 2.0.1. Reference the package directly from the project to select a different version. \n NeuroIDXamarinAndroid -> Xamarin.AndroidX.Legacy.Support.V4 1.0.0.4 -> Xamarin.AndroidX.Legacy.Support.Core.Utils 1.0.0.4 -> Xamarin.AndroidX.Annotation 1.1.0.5 -> Xamarin.AndroidX.Migration 1.0.7.1 -> Xamarin.AndroidX.MultiDex (>= 2.0.1.4) \n NeuroIDXamarinAndroid -> Xamarin.AndroidX.MultiDex (>= 2.0.1)",
+      "libraryId": "Xamarin.AndroidX.MultiDex",
+      "targetGraphs": [
+        "MonoAndroid,Version=v9.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.AndroidX.MultiDex from 2.0.1.4 to 2.0.1. Reference the package directly from the project to select a different version. \n NeuroIDXamarinAndroid -> Xamarin.AndroidX.Legacy.Support.V4 1.0.0.4 -> Xamarin.AndroidX.Core 1.3.0.2 -> Xamarin.AndroidX.Annotation 1.1.0.5 -> Xamarin.AndroidX.Migration 1.0.7.1 -> Xamarin.AndroidX.MultiDex (>= 2.0.1.4) \n NeuroIDXamarinAndroid -> Xamarin.AndroidX.MultiDex (>= 2.0.1)",
+      "libraryId": "Xamarin.AndroidX.MultiDex",
+      "targetGraphs": [
+        "MonoAndroid,Version=v9.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.AndroidX.MultiDex from 2.0.1.4 to 2.0.1. Reference the package directly from the project to select a different version. \n NeuroIDXamarinAndroid -> Xamarin.AndroidX.Legacy.Support.V4 1.0.0.4 -> Xamarin.AndroidX.Fragment 1.2.5.2 -> Xamarin.AndroidX.Annotation 1.1.0.5 -> Xamarin.AndroidX.Migration 1.0.7.1 -> Xamarin.AndroidX.MultiDex (>= 2.0.1.4) \n NeuroIDXamarinAndroid -> Xamarin.AndroidX.MultiDex (>= 2.0.1)",
+      "libraryId": "Xamarin.AndroidX.MultiDex",
+      "targetGraphs": [
+        "MonoAndroid,Version=v9.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.AndroidX.MultiDex from 2.0.1.4 to 2.0.1. Reference the package directly from the project to select a different version. \n NeuroIDXamarinAndroid -> Xamarin.AndroidX.Legacy.Support.V4 1.0.0.4 -> Xamarin.AndroidX.Media 1.1.0.4 -> Xamarin.AndroidX.Collection 1.1.0.4 -> Xamarin.AndroidX.Annotation 1.1.0.5 -> Xamarin.AndroidX.Migration 1.0.7.1 -> Xamarin.AndroidX.MultiDex (>= 2.0.1.4) \n NeuroIDXamarinAndroid -> Xamarin.AndroidX.MultiDex (>= 2.0.1)",
       "libraryId": "Xamarin.AndroidX.MultiDex",
       "targetGraphs": [
         "MonoAndroid,Version=v9.0"
