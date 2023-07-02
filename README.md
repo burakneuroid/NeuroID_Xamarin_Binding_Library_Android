@@ -16,7 +16,8 @@ Folder Structure
          - Guid myuuid = Guid.NewGuid();
          - string myuuidAsString = myuuid.ToString();
          - c.SetUserId(myuuidAsString);
-      - n.Start(); 
+      - n.Start();
+      - You have to store the uuid that you used and pass it to your backend and use when you make a NeuroID - Analytics API Call
   - Android.Sample
     - Xamarin Android Sample app for testing
    
