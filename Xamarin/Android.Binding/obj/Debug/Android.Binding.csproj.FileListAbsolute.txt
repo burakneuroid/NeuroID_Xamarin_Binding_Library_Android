@@ -1,5 +1,5 @@
-/Users/burakkebapci/Desktop/AndroidBinding/Xamarin/Android.Binding/bin/Debug/testBubblePicker.Binding.dll
-/Users/burakkebapci/Desktop/AndroidBinding/Xamarin/Android.Binding/bin/Debug/testBubblePicker.Binding.pdb
+/Users/burakkebapci/Desktop/AndroidBinding/Xamarin/Android.Binding/bin/Debug/Android.Binding.dll
+/Users/burakkebapci/Desktop/AndroidBinding/Xamarin/Android.Binding/bin/Debug/Android.Binding.pdb
 /Users/burakkebapci/Desktop/AndroidBinding/Xamarin/Android.Binding/bin/Debug/Xamarin.AndroidX.Annotation.dll
 /Users/burakkebapci/Desktop/AndroidBinding/Xamarin/Android.Binding/bin/Debug/Xamarin.AndroidX.Annotation.pdb
 /Users/burakkebapci/Desktop/AndroidBinding/Xamarin/Android.Binding/bin/Debug/Xamarin.AndroidX.Arch.Core.Common.dll
@@ -33,5 +33,5 @@
 /Users/burakkebapci/Desktop/AndroidBinding/Xamarin/Android.Binding/obj/Debug/java-resolution-report.log
 /Users/burakkebapci/Desktop/AndroidBinding/Xamarin/Android.Binding/obj/Debug/Android.Binding.csproj.CoreCompileInputs.cache
 /Users/burakkebapci/Desktop/AndroidBinding/Xamarin/Android.Binding/obj/Debug/Android.Binding.csproj.CopyComplete
-/Users/burakkebapci/Desktop/AndroidBinding/Xamarin/Android.Binding/obj/Debug/testBubblePicker.Binding.dll
-/Users/burakkebapci/Desktop/AndroidBinding/Xamarin/Android.Binding/obj/Debug/testBubblePicker.Binding.pdb
+/Users/burakkebapci/Desktop/AndroidBinding/Xamarin/Android.Binding/obj/Debug/Android.Binding.dll
+/Users/burakkebapci/Desktop/AndroidBinding/Xamarin/Android.Binding/obj/Debug/Android.Binding.pdb

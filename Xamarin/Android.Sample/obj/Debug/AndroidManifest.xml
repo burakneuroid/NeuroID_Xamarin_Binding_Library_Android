@@ -10,7 +10,7 @@
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:supportsRtl="true" android:theme="@style/AppTheme" android:name="androidx.multidex.MultiDexApplication" android:debuggable="true" android:extractNativeLibs="true">
-    <activity android:label="@string/app_name" android:theme="@style/AppTheme.NoActionBar" android:name="crc64e9ca5e99797c36d6.MainActivity" android:exported="true">
+    <activity android:label="@string/app_name" android:theme="@style/AppTheme.NoActionBar" android:name="crc640dbd59868da51668.MainActivity" android:exported="true">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

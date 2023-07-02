@@ -1,33 +1,41 @@
 ﻿<Properties StartupConfiguration="{A6AABD93-53F1-4750-9F41-59833E9723F6}|Default">
-  <MonoDevelop.Ide.ItemProperties.Android.Sample AndroidDesignerPreferredDevice="Nexus 4" AndroidDesignerPreferredTheme="AppTheme" PreferredExecutionTarget="Android.Pixel_3a_API_32_arm64-v8a" />
   <MonoDevelop.MonoDroid LastDeploySdkVersion="13.2.0.6" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.Pixel_3a_API_32_arm64-v8a" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/burakkebapci/Desktop/AndroidBinding/Xamarin/testBubblePicker/MultiDexApplication.cs" relfile="testBubblePicker/MultiDexApplication.cs" line="20" column="1" />
       <Breakpoint file="/Users/burakkebapci/Desktop/AndroidBinding/Xamarin/testBubblePicker/MultiDexApplication.cs" relfile="testBubblePicker/MultiDexApplication.cs" line="7" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Android.Sample/MainActivity.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Android.Sample/Properties/AssemblyInfo.cs">
     <Files>
       <File FileName="../../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Bindings.Core.targets" />
-      <File FileName="../../../.nuget/packages/xamarin.androidx.migration/1.0.8/buildTransitive/monoandroid90/Xamarin.AndroidX.Migration.targets" Line="131" Column="9" />
-      <File FileName="Android.Sample/Resources/values/styles.xml" Line="4" Column="1" />
-      <File FileName="../../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="1509" Column="3" />
-      <File FileName="Android.Sample/Resources/values/strings.xml" Line="3" Column="60" />
-      <File FileName="Android.Sample/MainActivity.cs" Line="30" Column="1" />
+      <File FileName="../../../.nuget/packages/xamarin.androidx.migration/1.0.8/buildTransitive/monoandroid90/Xamarin.AndroidX.Migration.targets" />
+      <File FileName="Android.Sample/Resources/values/styles.xml" />
+      <File FileName="../../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" />
+      <File FileName="Android.Sample/Resources/values/strings.xml" />
+      <File FileName="Android.Sample/MainActivity.cs" Line="24" Column="1" />
+      <File FileName="Android.Binding/Transforms/Metadata.xml" Line="15" Column="1" />
+      <File FileName="Android.Sample/MultiDexApplication.cs" Line="8" Column="2" />
+      <File FileName="../../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.EmbeddedResource.targets" Line="36" Column="5" />
+      <File FileName="Android.Sample/Properties/AndroidManifest.xml" />
+      <File FileName="Android.Sample/Properties/AssemblyInfo.cs" Line="18" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Android.Solution" expanded="True" selected="True">
-            <Node name="Android.Binding" expanded="True" />
+          <Node name="Android.Solution" expanded="True">
+            <Node name="Android.Sample" expanded="True" selected="True">
+              <Node name="References" expanded="True" />
+              <Node name="Properties" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.Pixel_3a_API_32_arm64-v8a" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Android.Sample PreferredExecutionTarget="Android.Pixel_3a_API_32_arm64-v8a" AndroidDesignerPreferredDevice="Nexus 4" AndroidDesignerPreferredTheme="AppTheme" />
 </Properties>

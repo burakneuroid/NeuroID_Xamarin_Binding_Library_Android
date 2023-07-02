@@ -2,7 +2,7 @@
 --csdir="obj/Debug/generated/src"
 --enumdir="obj/Debug/generated/enums"
 --enummetadata="obj/Debug/generated/metadata"
---assembly=testBubblePicker.Binding
+--assembly=Android.Binding
 --ref="/Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v1.0/mscorlib.dll"
 --ref="/Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v1.0/Java.Interop.dll"
 --ref="/Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v9.0/Mono.Android.dll"

@@ -1,9 +1,9 @@
 package mono;
 public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
-		/* We need to ensure that "testBubblePicker.dll" comes first in this list. */
-		"testBubblePicker.dll",
-		"testBubblePicker.Binding.dll",
+		/* We need to ensure that "AndroidSample.dll" comes first in this list. */
+		"AndroidSample.dll",
+		"Android.Binding.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Core.Runtime.dll",
 		"Xamarin.Android.Arch.Lifecycle.Common.dll",

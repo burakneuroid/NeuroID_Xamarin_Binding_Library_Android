@@ -4,7 +4,7 @@ using Android.Runtime;
 using Java.Interop;
 using Com.Neuroid.Tracker;
 
-namespace testBubblePicker
+namespace NeuroIDXamarinAndroid
 {
     [Register("android/support/multidex/MultiDexApplication", DoNotGenerateAcw = true)]
     public class MultiDexApplication : Application

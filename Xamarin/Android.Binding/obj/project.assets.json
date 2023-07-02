@@ -1708,7 +1708,7 @@
     "version": "1.0.0",
     "restore": {
       "projectUniqueName": "/Users/burakkebapci/Desktop/AndroidBinding/Xamarin/Android.Binding/Android.Binding.csproj",
-      "projectName": "testBubblePicker.Binding",
+      "projectName": "Android.Binding",
       "projectPath": "/Users/burakkebapci/Desktop/AndroidBinding/Xamarin/Android.Binding/Android.Binding.csproj",
       "packagesPath": "/Users/burakkebapci/.nuget/packages/",
       "outputPath": "/Users/burakkebapci/Desktop/AndroidBinding/Xamarin/Android.Binding/obj/",

@@ -1,4 +1,17 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <metadata>
     <remove-node path="/api/package[@name='com.neuroid.tracker.models']" />
+    <remove-node path="/api/package[@name='com.neuroid.tracker.events']" />
+    <remove-node path="/api/package[@name='com.neuroid.tracker.extensions']" />
+    <remove-node path="/api/package[@name='com.neuroid.tracker.service']" />
+
+    <attr path="/api/package[@name='com.neuroid.tracker']/class[@name='NeuroID']" name="visibility">public</attr>
+    <attr path="/api/package[@name='com.neuroid.tracker.NeuroID']/class[@name='NeuroID']" name="visibility">public</attr>
+
+<!--
+       Change a parameter name from the generic p0 to a more meaningful one. 
+    <attr path="/api/package[@name='com.neuroid.tracker']/class[@name='NeuroID']/method[@name='setUserId']/parameter[@name='userId']" 
+        name="name">user</attr>-->
+
+
  </metadata>

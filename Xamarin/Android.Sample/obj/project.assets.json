@@ -1774,7 +1774,7 @@
           "buildTransitive/monoandroid9.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
       },
-      "testBubblePicker.Binding/1.0.0": {
+      "Android.Binding/1.0.0": {
         "type": "project",
         "framework": "MonoAndroid,Version=v9.0",
         "dependencies": {
@@ -1784,10 +1784,10 @@
           "Xamarin.KotlinX.Coroutines.Core.Jvm": "1.5.0"
         },
         "compile": {
-          "bin/placeholder/testBubblePicker.Binding.dll": {}
+          "bin/placeholder/Android.Binding.dll": {}
         },
         "runtime": {
-          "bin/placeholder/testBubblePicker.Binding.dll": {}
+          "bin/placeholder/Android.Binding.dll": {}
         }
       }
     }
@@ -3314,7 +3314,7 @@
         "xamarin.kotlinx.coroutines.core.jvm.nuspec"
       ]
     },
-    "testBubblePicker.Binding/1.0.0": {
+    "Android.Binding/1.0.0": {
       "type": "project",
       "path": "../Android.Binding/Android.Binding.csproj",
       "msbuildProject": "../Android.Binding/Android.Binding.csproj"
@@ -3322,6 +3322,7 @@
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v9.0": [
+      "Android.Binding >= 1.0.0",
       "Xamarin.Android.Support.v7.AppCompat >= 28.0.0.3",
       "Xamarin.AndroidX.AppCompat >= 1.3.1",
       "Xamarin.AndroidX.AppCompat.AppCompatResources >= 1.3.0",
@@ -3333,8 +3334,7 @@
       "Xamarin.AndroidX.Lifecycle.LiveData.Core >= 2.2.0",
       "Xamarin.AndroidX.MultiDex >= 2.0.1",
       "Xamarin.Essentials >= 1.5.0",
-      "Xamarin.Kotlin.StdLib >= 1.5.10",
-      "testBubblePicker.Binding >= 1.0.0"
+      "Xamarin.Kotlin.StdLib >= 1.5.10"
     ]
   },
   "packageFolders": {
@@ -3344,7 +3344,7 @@
     "version": "1.0.0",
     "restore": {
       "projectUniqueName": "/Users/burakkebapci/Desktop/AndroidBinding/Xamarin/Android.Sample/Android.Sample.csproj",
-      "projectName": "testBubblePicker",
+      "projectName": "AndroidSample",
       "projectPath": "/Users/burakkebapci/Desktop/AndroidBinding/Xamarin/Android.Sample/Android.Sample.csproj",
       "packagesPath": "/Users/burakkebapci/.nuget/packages/",
       "outputPath": "/Users/burakkebapci/Desktop/AndroidBinding/Xamarin/Android.Sample/obj/",
@@ -3429,27 +3429,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.AndroidX.CoordinatorLayout from 1.1.0.1 to 1.1.0. Reference the package directly from the project to select a different version. \n testBubblePicker -> Xamarin.AndroidX.Legacy.Support.Core.UI 1.0.0.1 -> Xamarin.AndroidX.CoordinatorLayout (>= 1.1.0.1) \n testBubblePicker -> Xamarin.AndroidX.CoordinatorLayout (>= 1.1.0)",
-      "libraryId": "Xamarin.AndroidX.CoordinatorLayout",
-      "targetGraphs": [
-        "MonoAndroid,Version=v9.0"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.AndroidX.Legacy.Support.Core.UI from 1.0.0.4 to 1.0.0.1. Reference the package directly from the project to select a different version. \n testBubblePicker -> Xamarin.AndroidX.Legacy.Support.V4 1.0.0.4 -> Xamarin.AndroidX.Legacy.Support.Core.UI (>= 1.0.0.4) \n testBubblePicker -> Xamarin.AndroidX.Legacy.Support.Core.UI (>= 1.0.0.1)",
-      "libraryId": "Xamarin.AndroidX.Legacy.Support.Core.UI",
-      "targetGraphs": [
-        "MonoAndroid,Version=v9.0"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.AndroidX.AppCompat.AppCompatResources from 1.3.1 to 1.3.0. Reference the package directly from the project to select a different version. \n testBubblePicker -> Xamarin.AndroidX.AppCompat 1.3.1 -> Xamarin.AndroidX.AppCompat.AppCompatResources (>= 1.3.1) \n testBubblePicker -> Xamarin.AndroidX.AppCompat.AppCompatResources (>= 1.3.0)",
+      "message": "Detected package downgrade: Xamarin.AndroidX.AppCompat.AppCompatResources from 1.3.1 to 1.3.0. Reference the package directly from the project to select a different version. \n AndroidSample -> Xamarin.AndroidX.AppCompat 1.3.1 -> Xamarin.AndroidX.AppCompat.AppCompatResources (>= 1.3.1) \n AndroidSample -> Xamarin.AndroidX.AppCompat.AppCompatResources (>= 1.3.0)",
       "libraryId": "Xamarin.AndroidX.AppCompat.AppCompatResources",
       "targetGraphs": [
         "MonoAndroid,Version=v9.0"
@@ -3459,7 +3439,27 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.AndroidX.Lifecycle.LiveData.Core from 2.3.1 to 2.2.0. Reference the package directly from the project to select a different version. \n testBubblePicker -> Xamarin.AndroidX.AppCompat 1.3.1 -> Xamarin.AndroidX.Fragment 1.3.6 -> Xamarin.AndroidX.Lifecycle.LiveData.Core (>= 2.3.1) \n testBubblePicker -> Xamarin.AndroidX.Lifecycle.LiveData.Core (>= 2.2.0)",
+      "message": "Detected package downgrade: Xamarin.AndroidX.CoordinatorLayout from 1.1.0.1 to 1.1.0. Reference the package directly from the project to select a different version. \n AndroidSample -> Xamarin.AndroidX.Legacy.Support.Core.UI 1.0.0.1 -> Xamarin.AndroidX.CoordinatorLayout (>= 1.1.0.1) \n AndroidSample -> Xamarin.AndroidX.CoordinatorLayout (>= 1.1.0)",
+      "libraryId": "Xamarin.AndroidX.CoordinatorLayout",
+      "targetGraphs": [
+        "MonoAndroid,Version=v9.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.AndroidX.Legacy.Support.Core.UI from 1.0.0.4 to 1.0.0.1. Reference the package directly from the project to select a different version. \n AndroidSample -> Xamarin.AndroidX.Legacy.Support.V4 1.0.0.4 -> Xamarin.AndroidX.Legacy.Support.Core.UI (>= 1.0.0.4) \n AndroidSample -> Xamarin.AndroidX.Legacy.Support.Core.UI (>= 1.0.0.1)",
+      "libraryId": "Xamarin.AndroidX.Legacy.Support.Core.UI",
+      "targetGraphs": [
+        "MonoAndroid,Version=v9.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.AndroidX.Lifecycle.LiveData.Core from 2.3.1 to 2.2.0. Reference the package directly from the project to select a different version. \n AndroidSample -> Xamarin.AndroidX.AppCompat 1.3.1 -> Xamarin.AndroidX.Fragment 1.3.6 -> Xamarin.AndroidX.Lifecycle.LiveData.Core (>= 2.3.1) \n AndroidSample -> Xamarin.AndroidX.Lifecycle.LiveData.Core (>= 2.2.0)",
       "libraryId": "Xamarin.AndroidX.Lifecycle.LiveData.Core",
       "targetGraphs": [
         "MonoAndroid,Version=v9.0"
@@ -3469,17 +3469,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.AndroidX.MultiDex from 2.0.1.5 to 2.0.1. Reference the package directly from the project to select a different version. \n testBubblePicker -> Xamarin.AndroidX.AppCompat.AppCompatResources 1.3.0 -> Xamarin.AndroidX.Annotation 1.2.0 -> Xamarin.AndroidX.Migration 1.0.8 -> Xamarin.AndroidX.MultiDex (>= 2.0.1.5) \n testBubblePicker -> Xamarin.AndroidX.MultiDex (>= 2.0.1)",
-      "libraryId": "Xamarin.AndroidX.MultiDex",
-      "targetGraphs": [
-        "MonoAndroid,Version=v9.0"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.AndroidX.Lifecycle.LiveData.Core from 2.3.1 to 2.2.0. Reference the package directly from the project to select a different version. \n testBubblePicker -> Xamarin.AndroidX.AppCompat 1.3.1 -> Xamarin.AndroidX.Activity 1.2.4 -> Xamarin.AndroidX.Lifecycle.ViewModelSavedState 2.3.1 -> Xamarin.AndroidX.Lifecycle.LiveData.Core (>= 2.3.1) \n testBubblePicker -> Xamarin.AndroidX.Lifecycle.LiveData.Core (>= 2.2.0)",
+      "message": "Detected package downgrade: Xamarin.AndroidX.Lifecycle.LiveData.Core from 2.3.1 to 2.2.0. Reference the package directly from the project to select a different version. \n AndroidSample -> Xamarin.AndroidX.AppCompat 1.3.1 -> Xamarin.AndroidX.Activity 1.2.4 -> Xamarin.AndroidX.Lifecycle.ViewModelSavedState 2.3.1 -> Xamarin.AndroidX.Lifecycle.LiveData.Core (>= 2.3.1) \n AndroidSample -> Xamarin.AndroidX.Lifecycle.LiveData.Core (>= 2.2.0)",
       "libraryId": "Xamarin.AndroidX.Lifecycle.LiveData.Core",
       "targetGraphs": [
         "MonoAndroid,Version=v9.0"
@@ -3489,7 +3479,7 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.AndroidX.MultiDex from 2.0.1.5 to 2.0.1. Reference the package directly from the project to select a different version. \n testBubblePicker -> Xamarin.AndroidX.AppCompat 1.3.1 -> Xamarin.AndroidX.Annotation 1.2.0 -> Xamarin.AndroidX.Migration 1.0.8 -> Xamarin.AndroidX.MultiDex (>= 2.0.1.5) \n testBubblePicker -> Xamarin.AndroidX.MultiDex (>= 2.0.1)",
+      "message": "Detected package downgrade: Xamarin.AndroidX.MultiDex from 2.0.1.5 to 2.0.1. Reference the package directly from the project to select a different version. \n AndroidSample -> Xamarin.AndroidX.AppCompat 1.3.1 -> Xamarin.AndroidX.Annotation 1.2.0 -> Xamarin.AndroidX.Migration 1.0.8 -> Xamarin.AndroidX.MultiDex (>= 2.0.1.5) \n AndroidSample -> Xamarin.AndroidX.MultiDex (>= 2.0.1)",
       "libraryId": "Xamarin.AndroidX.MultiDex",
       "targetGraphs": [
         "MonoAndroid,Version=v9.0"
@@ -3499,7 +3489,17 @@
       "code": "NU1605",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.AndroidX.MultiDex from 2.0.1.5 to 2.0.1. Reference the package directly from the project to select a different version. \n testBubblePicker -> testBubblePicker.Binding -> Xamarin.AndroidX.Core.Core.Ktx 1.5.0 -> Xamarin.AndroidX.Annotation 1.2.0 -> Xamarin.AndroidX.Migration 1.0.8 -> Xamarin.AndroidX.MultiDex (>= 2.0.1.5) \n testBubblePicker -> Xamarin.AndroidX.MultiDex (>= 2.0.1)",
+      "message": "Detected package downgrade: Xamarin.AndroidX.MultiDex from 2.0.1.5 to 2.0.1. Reference the package directly from the project to select a different version. \n AndroidSample -> Xamarin.AndroidX.AppCompat.AppCompatResources 1.3.0 -> Xamarin.AndroidX.Annotation 1.2.0 -> Xamarin.AndroidX.Migration 1.0.8 -> Xamarin.AndroidX.MultiDex (>= 2.0.1.5) \n AndroidSample -> Xamarin.AndroidX.MultiDex (>= 2.0.1)",
+      "libraryId": "Xamarin.AndroidX.MultiDex",
+      "targetGraphs": [
+        "MonoAndroid,Version=v9.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.AndroidX.MultiDex from 2.0.1.5 to 2.0.1. Reference the package directly from the project to select a different version. \n AndroidSample -> Android.Binding -> Xamarin.AndroidX.Core.Core.Ktx 1.5.0 -> Xamarin.AndroidX.Annotation 1.2.0 -> Xamarin.AndroidX.Migration 1.0.8 -> Xamarin.AndroidX.MultiDex (>= 2.0.1.5) \n AndroidSample -> Xamarin.AndroidX.MultiDex (>= 2.0.1)",
       "libraryId": "Xamarin.AndroidX.MultiDex",
       "targetGraphs": [
         "MonoAndroid,Version=v9.0"

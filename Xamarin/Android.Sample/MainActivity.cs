@@ -6,9 +6,10 @@ using Android.Runtime;
 using Android.Support.V7.App;
 using Android.Views;
 using Com.Neuroid.Tracker;
-using Com.Neuroid;
+using Com.Neuroid.Tracker.Utils;
+using Com.Neuroid.Tracker.Storage;
 
-namespace testBubblePicker
+namespace NeuroIDXamarinAndroid
 {
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
@@ -22,12 +23,19 @@ namespace testBubblePicker
 
 
             NeuroID n = new NeuroID.Builder(this.Application, "key_live_9cKE1AM8ZHxeKIhCJ4eC9GTd").Build();
-
+            n.Environment = "LIVE";
+            
             NeuroID.SetNeuroIdInstance(n);
             n.SiteId = "form_yours920";
 
-            n.Start();
+            NIDSharedPrefsDefaults c = new NIDSharedPrefsDefaults(this);
+            Guid myuuid = Guid.NewGuid();
+            string myuuidAsString = myuuid.ToString();
 
+            c.SetUserId(myuuidAsString);
+
+      
+            n.Start();
 
 
 
