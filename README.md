@@ -12,7 +12,10 @@ Folder Structure
       - NeuroID n = new NeuroID.Builder(this.Application, "{key}").Build();
       - NeuroID.SetNeuroIdInstance(n);
       - n.SiteId = "{siteId}";
-      - n.UserId = {setUseriD}
+      - NIDSharedPrefsDefaults c = new NIDSharedPrefsDefaults(this);
+         - Guid myuuid = Guid.NewGuid();
+         - string myuuidAsString = myuuid.ToString();
+         - c.SetUserId(myuuidAsString);
       - n.Start(); 
   - Android.Sample
     - Xamarin Android Sample app for testing
